@@ -80,12 +80,14 @@ function Index() {
         </div>
 
         <div className="relative mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-10 px-5 pb-24 pt-10 md:px-8 md:pb-32 md:pt-14 lg:grid-cols-[1.05fr_1fr] lg:gap-6">
-          <div className="animate-fade-up">
-            <Badge tone="blue" className="shadow-[0_8px_24px_-8px_rgb(33_72_255/0.5)]">
-              <Sparkles className="h-3.5 w-3.5" /> Atelier IA utile à distance
-            </Badge>
+          <div>
+            <div className="animate-fade-up" style={{ animationDelay: "0ms" }}>
+              <Badge tone="blue" className="shadow-[0_8px_24px_-8px_rgb(33_72_255/0.5)]">
+                <Sparkles className="h-3.5 w-3.5" /> Atelier IA utile à distance
+              </Badge>
+            </div>
 
-            <h1 className="mt-7 text-[34px] font-extrabold leading-[1.1] tracking-[-0.025em] text-[#0b1437] sm:text-[40px] lg:text-[44px] xl:text-[48px]">
+            <h1 className="mt-7 animate-fade-up text-[34px] font-extrabold leading-[1.1] tracking-[-0.025em] text-[#0b1437] sm:text-[40px] lg:text-[44px] xl:text-[48px]" style={{ animationDelay: "80ms" }}>
               Faites gagner du temps
               <br />à vos équipes grâce
               <br />à une <span className="text-[#2148ff]">IA simple,</span>
@@ -93,17 +95,17 @@ function Index() {
               <span className="text-[#2148ff]">utile et maîtrisée.</span>
             </h1>
 
-            <p className="mt-6 max-w-[520px] text-base leading-relaxed text-[#1b2647]/75 md:text-[17px]">
+            <p className="mt-6 max-w-[520px] animate-fade-up text-base leading-relaxed text-[#1b2647]/75 md:text-[17px]" style={{ animationDelay: "180ms" }}>
               Deux demi-journées à distance pour repérer les tâches répétitives,
               tester des usages concrets et mettre en place une méthode que votre
               équipe peut vraiment utiliser.
             </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-4">
-              <Button variant="primary" size="lg" leftIcon={<Calendar className="h-5 w-5" />}>
+            <div className="mt-9 flex flex-wrap items-center gap-4 animate-fade-up" style={{ animationDelay: "260ms" }}>
+              <Button variant="primary" size="lg" leftIcon={<Calendar className="h-5 w-5" />} className="transition-transform hover:-translate-y-0.5">
                 Réserver un échange
               </Button>
-              <div className="rounded-2xl border border-[#e6ecff] bg-white px-6 py-3 shadow-[var(--shadow-soft)]">
+              <div className="rounded-2xl border border-[#e6ecff] bg-white px-6 py-3 shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[var(--shadow-card-hover)]">
                 <div className="text-2xl font-extrabold leading-none text-[#0b1437]">
                   690 € <span className="text-sm font-bold align-top text-[#1b2647]/60">HT</span>
                 </div>
@@ -111,7 +113,7 @@ function Index() {
               </div>
             </div>
 
-            <ul className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium text-[#0b1437]">
+            <ul className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium text-[#0b1437] animate-fade-up" style={{ animationDelay: "340ms" }}>
               {["À distance", "TPE / PME", "Résultats concrets"].map((t, i) => (
                 <li key={t} className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-[#2148ff]" strokeWidth={2.5} />
@@ -122,7 +124,7 @@ function Index() {
             </ul>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[560px]">
+          <div className="relative mx-auto w-full max-w-[560px] animate-fade-up" style={{ animationDelay: "120ms" }}>
             <div className="absolute inset-0 -z-10 m-auto h-[80%] w-[80%] rounded-full bg-white/30 blur-3xl" />
             <img
               src={mascot}
