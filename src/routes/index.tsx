@@ -209,25 +209,29 @@ function Index() {
       {/* RÉSULTATS + PRIX */}
       <Section className="pb-20 md:pb-28">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1.55fr_1fr]">
-          <Card className="p-8 md:p-12">
-            <h2 className="text-center text-xl font-extrabold tracking-tight text-[#0b1437] md:text-[26px]">
-              À la fin de l'atelier, vous repartez avec :
-            </h2>
-            <div className="mt-10 grid grid-cols-2 gap-8 md:grid-cols-5 md:gap-6">
-              {[
-                { icon: Target, label: "Les tâches à automatiser en priorité" },
-                { icon: Rocket, label: "2 à 3 cas d'usage concrets" },
-                { icon: ShieldCheck, label: "Une méthode simple de vérification" },
-                { icon: UserCircle2, label: "Une équipe plus autonome et confiante" },
-                { icon: FolderOpen, label: "Une base de travail réutilisable" },
-              ].map(({ icon: Icon, label }) => (
-                <div key={label} className="flex flex-col items-center text-center">
-                  <Icon className="h-11 w-11 text-[#2148ff]" strokeWidth={1.8} />
-                  <p className="mt-4 max-w-[140px] text-sm font-semibold leading-snug text-[#0b1437]">{label}</p>
-                </div>
-              ))}
-            </div>
-          </Card>
+          <Reveal>
+            <Card className="p-8 md:p-12">
+              <h2 className="text-center text-xl font-extrabold tracking-tight text-[#0b1437] md:text-[26px]">
+                À la fin de l'atelier, vous repartez avec :
+              </h2>
+              <div className="mt-10 grid grid-cols-2 gap-8 md:grid-cols-5 md:gap-6">
+                {[
+                  { icon: Target, label: "Les tâches à automatiser en priorité" },
+                  { icon: Rocket, label: "2 à 3 cas d'usage concrets" },
+                  { icon: ShieldCheck, label: "Une méthode simple de vérification" },
+                  { icon: UserCircle2, label: "Une équipe plus autonome et confiante" },
+                  { icon: FolderOpen, label: "Une base de travail réutilisable" },
+                ].map(({ icon: Icon, label }, i) => (
+                  <Reveal key={label} delay={i * 70}>
+                    <div className="group flex flex-col items-center text-center">
+                      <Icon className="h-11 w-11 text-[#2148ff] transition-transform duration-300 group-hover:scale-110" strokeWidth={1.8} />
+                      <p className="mt-4 max-w-[140px] text-sm font-semibold leading-snug text-[#0b1437]">{label}</p>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+            </Card>
+          </Reveal>
 
           <Card tone="blue" className="relative overflow-hidden p-8 md:p-10">
             <div className="relative z-10 md:pr-[180px]">
