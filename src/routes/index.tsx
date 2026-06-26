@@ -214,7 +214,7 @@ function Index() {
             </div>
           </Card>
 
-          <Card tone="blue" className="relative overflow-hidden p-8 md:p-10">
+          <Card tone="blue" className="relative p-8 md:p-10">
             <div className="relative z-10 text-center">
               <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-white/85">
                 Atelier IA utile à distance
