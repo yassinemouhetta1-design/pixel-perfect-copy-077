@@ -139,25 +139,29 @@ function Index() {
 
       {/* PROBLÈME */}
       <Section className="-mt-16 pb-20 md:pb-28">
-        <Card className="p-8 md:p-14">
-          <h2 className="text-center text-2xl font-extrabold tracking-tight text-[#0b1437] md:text-[34px]">
-            Le problème aujourd'hui
-          </h2>
-          <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              { icon: Clock, title: "Trop de temps perdu", desc: "Vos équipes passent des heures sur des tâches répétitives à faible valeur ajoutée." },
-              { icon: Shuffle, title: "Des essais au hasard", desc: "Vous testez des outils sans savoir comment les utiliser efficacement." },
-              { icon: AlertTriangle, title: "Peur des erreurs", desc: "L'IA fait peur, on craint les erreurs, les « faux résultats » et les risques." },
-              { icon: HelpCircle, title: "Manque de méthode", desc: "Sans cadre clair, pas d'usage durable ni d'autonomie dans l'équipe." },
-            ].map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="flex flex-col items-center text-center">
-                <Icon className="h-12 w-12 text-[#2148ff]" strokeWidth={1.8} />
-                <h3 className="mt-5 text-base font-extrabold text-[#0b1437]">{title}</h3>
-                <p className="mt-3 max-w-[230px] text-sm leading-relaxed text-[#1b2647]/65">{desc}</p>
-              </div>
-            ))}
-          </div>
-        </Card>
+        <Reveal>
+          <Card className="p-8 md:p-14">
+            <h2 className="text-center text-2xl font-extrabold tracking-tight text-[#0b1437] md:text-[34px]">
+              Le problème aujourd'hui
+            </h2>
+            <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                { icon: Clock, title: "Trop de temps perdu", desc: "Vos équipes passent des heures sur des tâches répétitives à faible valeur ajoutée." },
+                { icon: Shuffle, title: "Des essais au hasard", desc: "Vous testez des outils sans savoir comment les utiliser efficacement." },
+                { icon: AlertTriangle, title: "Peur des erreurs", desc: "L'IA fait peur, on craint les erreurs, les « faux résultats » et les risques." },
+                { icon: HelpCircle, title: "Manque de méthode", desc: "Sans cadre clair, pas d'usage durable ni d'autonomie dans l'équipe." },
+              ].map(({ icon: Icon, title, desc }, i) => (
+                <Reveal key={title} delay={i * 80}>
+                  <div className="group flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-1">
+                    <Icon className="h-12 w-12 text-[#2148ff] transition-transform duration-300 group-hover:scale-110" strokeWidth={1.8} />
+                    <h3 className="mt-5 text-base font-extrabold text-[#0b1437]">{title}</h3>
+                    <p className="mt-3 max-w-[230px] text-sm leading-relaxed text-[#1b2647]/65">{desc}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </Card>
+        </Reveal>
       </Section>
 
       {/* DÉROULÉ */}
