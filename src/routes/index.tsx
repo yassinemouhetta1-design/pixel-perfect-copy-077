@@ -214,7 +214,7 @@ function Index() {
             </div>
           </Card>
 
-          <Card tone="blue" className="relative overflow-hidden p-8 md:p-10">
+          <Card tone="blue" className="relative p-8 md:p-10">
             <div className="relative z-10 text-center">
               <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-white/85">
                 Atelier IA utile à distance
@@ -239,7 +239,7 @@ function Index() {
               loading="lazy"
               width={816}
               height={816}
-              className="pointer-events-none absolute right-[-18px] bottom-[34px] h-[170px] w-auto animate-float-slow opacity-95"
+              className="pointer-events-none absolute right-[-90px] bottom-[20px] h-[260px] w-auto animate-float-slow drop-shadow-2xl"
             />
           </Card>
         </div>
