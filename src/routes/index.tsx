@@ -84,7 +84,7 @@ function Index() {
               <Sparkles className="h-3.5 w-3.5" /> Atelier IA utile à distance
             </Badge>
 
-            <h1 className="mt-7 text-[40px] font-extrabold leading-[1.08] tracking-[-0.02em] text-[#0b1437] md:text-[52px]">
+            <h1 className="mt-7 text-[34px] font-extrabold leading-[1.1] tracking-[-0.025em] text-[#0b1437] sm:text-[40px] lg:text-[44px] xl:text-[48px]">
               Faites gagner du temps
               <br />à vos équipes grâce
               <br />à une <span className="text-[#2148ff]">IA simple,</span>
