@@ -232,15 +232,20 @@ function Index() {
                 <Lock className="h-3.5 w-3.5" /> Paiement par virement – Facture fournie
               </p>
             </div>
-            <img
-              src={mascotSmall}
-              alt=""
-              aria-hidden
-              loading="lazy"
-              width={816}
-              height={816}
-              className="pointer-events-none absolute right-[-90px] bottom-[20px] h-[260px] w-auto animate-float-slow drop-shadow-2xl"
-            />
+            <div
+              className="pointer-events-none absolute right-[-86px] bottom-[136px] z-20 h-[255px] w-[255px] origin-bottom-right"
+              style={{ transform: "rotate(-15deg)" }}
+            >
+              <img
+                src={mascotSmall}
+                alt=""
+                aria-hidden
+                loading="lazy"
+                width={816}
+                height={816}
+                className="h-full w-full animate-float-slow object-contain drop-shadow-2xl"
+              />
+            </div>
           </Card>
         </div>
       </Section>
