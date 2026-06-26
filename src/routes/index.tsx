@@ -28,6 +28,7 @@ import { Card } from "@/components/site/Card";
 import { Badge } from "@/components/site/Badge";
 import { IconBubble } from "@/components/site/IconBubble";
 import { Section } from "@/components/site/Section";
+import { Reveal } from "@/components/site/Reveal";
 
 export const Route = createFileRoute("/")({
   head: () => ({
