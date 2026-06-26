@@ -232,7 +232,10 @@ function Index() {
                 <Lock className="h-3.5 w-3.5" /> Paiement par virement – Facture fournie
               </p>
             </div>
-            <div className="pointer-events-none absolute right-[-86px] bottom-[136px] z-20 h-[255px] w-[255px] origin-bottom-right rotate-[-15deg]">
+            <div
+              className="pointer-events-none absolute right-[-86px] bottom-[136px] z-20 h-[255px] w-[255px] origin-bottom-right"
+              style={{ transform: "rotate(-15deg)" }}
+            >
               <img
                 src={mascotSmall}
                 alt=""
