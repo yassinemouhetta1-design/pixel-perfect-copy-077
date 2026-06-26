@@ -166,35 +166,43 @@ function Index() {
 
       {/* DÉROULÉ */}
       <Section className="pb-20 md:pb-28">
-        <h2 className="text-center text-2xl font-extrabold tracking-tight text-[#0b1437] md:text-[30px]">
-          Un atelier <span className="text-[#2148ff]">pratique</span> en 2 étapes + une phase de test
-        </h2>
+        <Reveal>
+          <h2 className="text-center text-2xl font-extrabold tracking-tight text-[#0b1437] md:text-[30px]">
+            Un atelier <span className="text-[#2148ff]">pratique</span> en 2 étapes + une phase de test
+          </h2>
+        </Reveal>
 
         <div className="mt-12 grid grid-cols-1 items-stretch gap-6 lg:grid-cols-[1fr_auto_1fr_auto_1fr]">
-          <StepCard
-            number={1}
-            tone="soft"
-            icon={<Users className="h-7 w-7" />}
-            title="Session 1 – 3h"
-            items={["Comprendre l'IA simplement", "Repérer les tâches répétitives", "Identifier 2 à 3 cas d'usage concrets à tester"]}
-          />
+          <Reveal delay={0}>
+            <StepCard
+              number={1}
+              tone="soft"
+              icon={<Users className="h-7 w-7" />}
+              title="Session 1 – 3h"
+              items={["Comprendre l'IA simplement", "Repérer les tâches répétitives", "Identifier 2 à 3 cas d'usage concrets à tester"]}
+            />
+          </Reveal>
           <Arrow />
-          <StepCard
-            tone="green"
-            icon={<FlaskConical className="h-7 w-7" />}
-            iconTone="green"
-            title="Phase de test"
-            subtitle="2 à 3 semaines"
-            description="Vous testez les usages définis sur vos vraies tâches, avec vos équipes."
-          />
+          <Reveal delay={120}>
+            <StepCard
+              tone="green"
+              icon={<FlaskConical className="h-7 w-7" />}
+              iconTone="green"
+              title="Phase de test"
+              subtitle="2 à 3 semaines"
+              description="Vous testez les usages définis sur vos vraies tâches, avec vos équipes."
+            />
+          </Reveal>
           <Arrow />
-          <StepCard
-            number={2}
-            tone="soft"
-            icon={<MessagesSquare className="h-7 w-7" />}
-            title="Session 2 – 3h"
-            items={["Retour d'expérience", "Corriger et améliorer", "Créer une méthode simple et un mini système réutilisable"]}
-          />
+          <Reveal delay={240}>
+            <StepCard
+              number={2}
+              tone="soft"
+              icon={<MessagesSquare className="h-7 w-7" />}
+              title="Session 2 – 3h"
+              items={["Retour d'expérience", "Corriger et améliorer", "Créer une méthode simple et un mini système réutilisable"]}
+            />
+          </Reveal>
         </div>
       </Section>
 
