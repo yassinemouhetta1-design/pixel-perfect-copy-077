@@ -239,7 +239,7 @@ function Index() {
               loading="lazy"
               width={816}
               height={816}
-              className="pointer-events-none absolute right-[-90px] bottom-[20px] h-[260px] w-auto animate-float-slow drop-shadow-2xl"
+              className="pointer-events-none absolute right-[-78px] bottom-[92px] z-20 h-[255px] w-auto origin-bottom-right rotate-[-13deg] animate-float-slow drop-shadow-2xl"
             />
           </Card>
         </div>
