@@ -233,34 +233,36 @@ function Index() {
             </Card>
           </Reveal>
 
-          <Card tone="blue" className="relative overflow-hidden p-8 md:p-10">
-            <div className="relative z-10 md:pr-[180px]">
-              <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-white/85">
-                Atelier IA utile à distance
-              </p>
-              <div className="mt-5 text-[56px] font-extrabold leading-none">
-                690 € <span className="text-xl font-bold align-top">HT</span>
+          <Reveal delay={120}>
+            <Card tone="blue" className="relative overflow-hidden p-8 md:p-10">
+              <div className="relative z-10 md:pr-[180px]">
+                <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-white/85">
+                  Atelier IA utile à distance
+                </p>
+                <div className="mt-5 text-[56px] font-extrabold leading-none">
+                  690 € <span className="text-xl font-bold align-top">HT</span>
+                </div>
+                <p className="mt-2 text-sm font-medium text-white/80">Offre unique</p>
+                <div className="mt-7">
+                  <Button variant="white" size="lg" leftIcon={<Calendar className="h-5 w-5" />} className="w-full md:w-auto transition-transform hover:-translate-y-0.5">
+                    Réserver un échange
+                  </Button>
+                </div>
+                <p className="mt-5 flex items-center gap-2 text-xs font-medium text-white/80">
+                  <Lock className="h-3.5 w-3.5" /> Paiement par virement – Facture fournie
+                </p>
               </div>
-              <p className="mt-2 text-sm font-medium text-white/80">Offre unique</p>
-              <div className="mt-7">
-                <Button variant="white" size="lg" leftIcon={<Calendar className="h-5 w-5" />} className="w-full md:w-auto">
-                  Réserver un échange
-                </Button>
-              </div>
-              <p className="mt-5 flex items-center gap-2 text-xs font-medium text-white/80">
-                <Lock className="h-3.5 w-3.5" /> Paiement par virement – Facture fournie
-              </p>
-            </div>
-            <img
-              src={mascotSmall}
-              alt=""
-              aria-hidden
-              loading="lazy"
-              width={816}
-              height={816}
-              className="pointer-events-none absolute right-[-30px] bottom-0 z-0 hidden h-[230px] w-auto object-contain drop-shadow-2xl md:block"
-            />
-          </Card>
+              <img
+                src={mascotSmall}
+                alt=""
+                aria-hidden
+                loading="lazy"
+                width={816}
+                height={816}
+                className="pointer-events-none absolute right-[-30px] bottom-0 z-0 hidden h-[230px] w-auto object-contain drop-shadow-2xl md:block"
+              />
+            </Card>
+          </Reveal>
         </div>
       </Section>
 
