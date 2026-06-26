@@ -268,54 +268,60 @@ function Index() {
 
       {/* ACCOMPAGNEMENT */}
       <Section className="pb-12">
-        <Card tone="soft" className="p-6 md:p-8">
-          <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
-            <div className="flex items-start gap-4">
-              <IconBubble tone="white" size="md">
-                <Rocket className="h-6 w-6" strokeWidth={2} />
-              </IconBubble>
-              <div>
-                <h3 className="text-base font-extrabold text-[#0b1437]">Un accompagnement complémentaire</h3>
-                <p className="mt-1 text-sm text-[#1b2647]/65">
-                  ou une mise en place peuvent être proposés ensuite selon vos besoins.
-                </p>
-              </div>
-            </div>
-            {[
-              { icon: ClipboardCheck, title: "Mise en place", desc: "Sur devis" },
-              { icon: UserCog, title: "Accompagnement ponctuel", desc: "Sur devis" },
-              { icon: LineChart, title: "Suivi mensuel léger", desc: "100 à 150 € HT / mois" },
-            ].map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="flex items-start gap-3">
-                <Icon className="mt-0.5 h-5 w-5 text-[#2148ff]" strokeWidth={2} />
+        <Reveal>
+          <Card tone="soft" className="p-6 md:p-8">
+            <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+              <div className="flex items-start gap-4">
+                <IconBubble tone="white" size="md">
+                  <Rocket className="h-6 w-6" strokeWidth={2} />
+                </IconBubble>
                 <div>
-                  <div className="text-sm font-extrabold text-[#0b1437]">{title}</div>
-                  <div className="text-xs text-[#1b2647]/65">{desc}</div>
+                  <h3 className="text-base font-extrabold text-[#0b1437]">Un accompagnement complémentaire</h3>
+                  <p className="mt-1 text-sm text-[#1b2647]/65">
+                    ou une mise en place peuvent être proposés ensuite selon vos besoins.
+                  </p>
                 </div>
               </div>
-            ))}
-          </div>
-        </Card>
+              {[
+                { icon: ClipboardCheck, title: "Mise en place", desc: "Sur devis" },
+                { icon: UserCog, title: "Accompagnement ponctuel", desc: "Sur devis" },
+                { icon: LineChart, title: "Suivi mensuel léger", desc: "100 à 150 € HT / mois" },
+              ].map(({ icon: Icon, title, desc }) => (
+                <div key={title} className="group flex items-start gap-3 transition-transform duration-300 hover:-translate-y-0.5">
+                  <Icon className="mt-0.5 h-5 w-5 text-[#2148ff] transition-transform duration-300 group-hover:scale-110" strokeWidth={2} />
+                  <div>
+                    <div className="text-sm font-extrabold text-[#0b1437]">{title}</div>
+                    <div className="text-xs text-[#1b2647]/65">{desc}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Card>
+        </Reveal>
       </Section>
 
       {/* CTA FINAL */}
       <section className="relative mt-10 overflow-hidden bg-[#2148ff] py-10">
-        <div className="mx-auto flex w-full max-w-[1200px] flex-col items-center justify-between gap-6 px-5 md:flex-row md:px-8">
-          <div className="flex items-start gap-4 text-white">
-            <Rocket className="mt-1 h-7 w-7 shrink-0" strokeWidth={2} />
-            <div>
-              <h3 className="text-lg font-extrabold md:text-xl">
-                Et si on voyait ensemble ce que l'IA peut changer chez vous ?
-              </h3>
-              <p className="mt-1 text-sm text-white/85">
-                Réservez un échange de 20 minutes, sans engagement.
-              </p>
+        <div className="pointer-events-none absolute -left-20 -top-20 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
+        <div className="pointer-events-none absolute -right-10 -bottom-20 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
+        <Reveal>
+          <div className="mx-auto flex w-full max-w-[1200px] flex-col items-center justify-between gap-6 px-5 md:flex-row md:px-8">
+            <div className="flex items-start gap-4 text-white">
+              <Rocket className="mt-1 h-7 w-7 shrink-0" strokeWidth={2} />
+              <div>
+                <h3 className="text-lg font-extrabold md:text-xl">
+                  Et si on voyait ensemble ce que l'IA peut changer chez vous ?
+                </h3>
+                <p className="mt-1 text-sm text-white/85">
+                  Réservez un échange de 20 minutes, sans engagement.
+                </p>
+              </div>
             </div>
+            <Button variant="white" size="lg" leftIcon={<Calendar className="h-5 w-5" />} className="transition-transform hover:-translate-y-0.5 hover:scale-[1.02]">
+              Réserver un échange
+            </Button>
           </div>
-          <Button variant="white" size="lg" leftIcon={<Calendar className="h-5 w-5" />}>
-            Réserver un échange
-          </Button>
-        </div>
+        </Reveal>
       </section>
     </main>
   );
