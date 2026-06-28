@@ -3,8 +3,8 @@ import { ArrowRight, ShieldCheck, Timer, Users, Tag } from 'lucide-react'
 import { BrandButton } from './primitives'
 
 const trustChips = [
-  { icon: <ShieldCheck className="size-4" />, label: 'Diagnostic gratuit' },
-  { icon: <Timer className="size-4" />, label: '2 cas pilotes terrain' },
+  { icon: <ShieldCheck className="size-4" />, label: 'Sécurisé & confidentiel' },
+  { icon: <Timer className="size-4" />, label: 'Réponse sous 24h' },
   { icon: <Users className="size-4" />, label: 'Sans engagement' },
 ]
 
@@ -61,19 +61,19 @@ export function Hero() {
           </h1>
 
           <p className="mt-8 max-w-[470px] text-[18px] font-medium leading-[1.75] text-ink">
-            En 2 demi-journées à distance, on repère vos tâches répétitives, on teste 2 à 3 cas
-            concrets et vous repartez avec un plan d'action simple.
+            Un atelier IA à distance pour repérer les tâches répétitives et tester des usages
+            concrets.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-8">
             <BrandButton className="whitespace-nowrap rounded-xl px-8 py-5 text-[16px]">
-              Réserver un diagnostic IA
+              Réserver un échange
               <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
             </BrandButton>
 
             <div className="inline-flex items-center gap-3 text-[15px] font-extrabold text-ink">
               <Tag className="size-5 text-brand" />
-              Tarif bêta — 690 € HT
+              690 € HT
             </div>
           </div>
 

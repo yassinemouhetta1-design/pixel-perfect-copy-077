@@ -1,8 +1,8 @@
-import { ArrowRight, CalendarDays, Check, Quote, ShieldCheck } from 'lucide-react'
+import { ArrowRight, CalendarDays, Check, Quote, ShieldCheck, Star } from 'lucide-react'
 import { BrandButton, Section } from './primitives'
 import { Reveal } from './reveal'
 
-const checks = ['Diagnostic gratuit', 'Réponse sous 24h', 'Sans engagement']
+const checks = ['Échange sans engagement', 'Réponse sous 24h', '100% adapté à votre activité']
 
 export function FinalCta() {
   return (
@@ -16,18 +16,18 @@ export function FinalCta() {
               </span>
               <div>
                 <h2 className="max-w-sm text-[25px] font-extrabold leading-[1.12] text-ink">
-                  Vous voulez savoir si l'atelier est adapté à votre entreprise ?
+                  Prêt à reprendre le contrôle de votre temps ?
                 </h2>
                 <p className="mt-4 max-w-md text-[13px] font-medium leading-[1.85] text-ink-soft">
-                  Réservez un diagnostic gratuit de 20 minutes. On regarde vos tâches, vos outils
-                  et vos contraintes pour voir si l'atelier peut réellement vous aider.
+                  Réservez un échange gratuit de 20 minutes pour voir comment l'IA peut vous aider
+                  concrètement.
                 </p>
               </div>
             </div>
 
             <div className="mt-8 grid gap-6 md:grid-cols-[auto_1fr] md:items-end">
               <BrandButton className="rounded-xl px-6 py-4 text-[14px]">
-                Réserver mon diagnostic
+                Réserver un échange
                 <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
               </BrandButton>
 
@@ -47,26 +47,27 @@ export function FinalCta() {
           <div className="rounded-[28px] bg-[#f5f7fb] p-8">
             <Quote className="size-10 fill-brand text-brand" />
             <blockquote className="mt-6 max-w-lg text-[15px] font-semibold leading-[1.75] text-ink">
-              Cas pilotes en cours : 1 entreprise de stage accompagnée gratuitement + 1 structure
-              interne, avec processus, livrables et irritants métier documentés. Pas de promesse
-              gonflée : vous achetez un atelier cadré et une méthode testée sur le terrain.
+              YX Automation nous a permis de gagner un temps précieux sur des tâches qu'on pensait
+              inévitables. L'accompagnement est clair, concret et efficace.
             </blockquote>
 
             <div className="mt-9 flex items-end justify-between gap-4">
               <div className="flex items-center gap-3">
                 <span className="flex size-11 items-center justify-center rounded-full bg-brand-soft text-sm font-extrabold text-brand">
-                  YX
+                  CL
                 </span>
                 <div>
-                  <p className="text-[13px] font-extrabold text-ink">YX Automation</p>
+                  <p className="text-[13px] font-extrabold text-ink">Claire L.</p>
                   <p className="text-[11px] font-medium text-ink-soft">
-                    Atelier IA Terrain — offre bêta
+                    Responsable administrative - PME
                   </p>
                 </div>
               </div>
 
-              <div className="rounded-full bg-white px-4 py-2 text-[12px] font-extrabold uppercase tracking-[0.12em] text-brand">
-                2 cas pilotes
+              <div className="flex items-center gap-1 text-brand">
+                {Array.from({ length: 5 }).map((_, index) => (
+                  <Star key={index} className="size-5 fill-current" />
+                ))}
               </div>
             </div>
           </div>

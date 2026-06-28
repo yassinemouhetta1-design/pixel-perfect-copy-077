@@ -5,23 +5,23 @@ import { Reveal } from './reveal'
 const steps = [
   {
     icon: <Search className="size-8" />,
-    title: 'On pose le cadre',
-    description: "Présentation simple de l'IA, des outils utiles et des règles à garder en tête.",
+    title: 'On analyse',
+    description: 'On identifie avec vous les tâches répétitives et chronophages.',
   },
   {
     icon: <Zap className="size-8" />,
-    title: 'On repère les bons cas',
-    description: 'On analyse vos outils et vos tâches pour trouver ce qui vaut vraiment le coup.',
+    title: 'On automatise',
+    description: 'On conçoit des automatisations sur mesure adaptées à vos outils.',
   },
   {
     icon: <CheckCircle2 className="size-8" />,
-    title: 'Vous pratiquez',
-    description: 'Vous testez les premiers usages pendant 2 à 3 semaines sur vos vrais dossiers.',
+    title: 'On teste',
+    description: 'On teste ensemble pour valider les résultats rapidement.',
   },
   {
     icon: <TrendingUp className="size-8" />,
-    title: 'On finalise le plan',
-    description: "On garde ce qui fonctionne, on écarte le reste et on priorise la suite.",
+    title: 'Vous gagnez',
+    description: "Moins d'erreurs, plus de temps, plus de clarté au quotidien.",
   },
 ]
 
@@ -30,10 +30,10 @@ export function MethodSection() {
     <Section className="py-8 lg:py-10">
       <Reveal>
         <h2 className="text-center text-[30px] font-extrabold tracking-normal text-ink">
-          Un atelier terrain en 4 temps
+          Une méthode simple en 4 étapes
         </h2>
         <p className="mt-3 text-center text-[14px] font-medium text-ink-soft">
-          On part de vos tâches, pas d'une formation IA générique.
+          On avance ensemble, pas à pas.
         </p>
       </Reveal>
 

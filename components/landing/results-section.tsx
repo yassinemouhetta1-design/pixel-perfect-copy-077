@@ -6,30 +6,30 @@ import { Reveal } from './reveal'
 const benefits = [
   {
     icon: <Clock className="size-7" />,
-    title: 'Tâches prioritaires',
-    description: 'Une liste claire des copier-coller, relances, synthèses ou tris à traiter en premier.',
+    title: 'Gain de temps',
+    description: "Jusqu'à plusieurs heures gagnées chaque semaine.",
   },
   {
     icon: <Target className="size-7" />,
-    title: "Cas d'usage testés",
-    description: '2 à 3 exemples concrets travaillés sur vos documents, outils ou contraintes.',
+    title: "Moins d'erreurs",
+    description: 'Des processus fiabilisés et standardisés.',
   },
   {
     icon: <Smile className="size-7" />,
-    title: 'Méthode réutilisable',
-    description: 'Des prompts, des règles de vérification et une façon simple de refaire les tests.',
+    title: 'Moins de charge mentale',
+    description: 'Moins de tâches répétitives, plus de concentration.',
   },
   {
     icon: <TrendingUp className="size-7" />,
-    title: 'Suite logique',
-    description: "Un plan d'action pour savoir quoi automatiser maintenant, plus tard, ou pas du tout.",
+    title: 'Plus de visibilité',
+    description: 'Des données fiables et accessibles.',
   },
 ]
 
 const stats = [
-  { label: 'Format', value: '2', sub: 'demi-journées', circled: true },
-  { label: 'Cas testés', value: '2-3', sub: 'sur vos données' },
-  { label: 'Prix bêta', value: '690€', sub: 'HT' },
+  { label: 'Temps gagné', value: '+3h', sub: 'par semaine', circled: true },
+  { label: 'Tâches identifiées', value: '7', sub: 'Ce mois-ci' },
+  { label: 'Erreurs évitées', value: '11', sub: 'Ce mois-ci' },
 ]
 
 export function ResultsSection() {
@@ -38,9 +38,9 @@ export function ResultsSection() {
       <Reveal>
         <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-[0.43fr_0.57fr]">
           <div className="pt-4">
-            <Badge className="px-5 py-2.5 text-[15px]">Ce que vous obtenez</Badge>
+            <Badge className="px-5 py-2.5 text-[15px]">Des bénéfices concrets</Badge>
             <h2 className="mt-8 max-w-[620px] text-[38px] font-extrabold leading-[1.14] tracking-normal text-ink">
-              Une base claire pour utiliser l'IA sans partir dans tous les sens.
+              Des résultats visibles dès les premières semaines.
             </h2>
 
             <div className="mt-10 grid grid-cols-1 gap-x-12 gap-y-8 sm:grid-cols-2 lg:mt-12 lg:gap-y-10">
@@ -164,7 +164,7 @@ export function ResultsSection() {
               />
 
               <div className="absolute left-[44%] top-[6%] w-[34%] max-w-[200px] rounded-3xl bg-white p-4 shadow-[0_18px_42px_-24px_rgba(14,21,48,0.25)] z-30">
-                <p className="text-[14px] font-extrabold text-ink text-center">Plan d'action</p>
+                <p className="text-[14px] font-extrabold text-ink text-center">Productivité</p>
                 <svg viewBox="0 0 220 95" className="mt-2 h-20 w-full" aria-hidden>
                   <defs>
                     <linearGradient id="productivity-gradient" x1="0" y1="0" x2="0" y2="1">
