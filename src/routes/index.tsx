@@ -124,7 +124,7 @@ function Index() {
             </ul>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[440px] animate-fade-up lg:ml-auto lg:mr-[-20px]" style={{ animationDelay: "120ms" }}>
+          <div className="relative mx-auto w-full max-w-[760px] min-w-0 animate-fade-up lg:ml-auto lg:mr-[-30px] lg:w-[120%]" style={{ animationDelay: "120ms" }}>
             <div className="absolute inset-0 -z-10 m-auto h-[70%] w-[70%] rounded-full halo-glow blur-2xl" />
             <img
               src={mascot}
