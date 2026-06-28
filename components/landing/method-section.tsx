@@ -27,9 +27,9 @@ const steps = [
 
 export function MethodSection() {
   return (
-    <Section className="py-8 lg:py-10">
+    <Section className="py-10 lg:py-10">
       <Reveal>
-        <h2 className="text-center text-[30px] font-extrabold tracking-normal text-ink">
+        <h2 className="text-center text-[26px] font-extrabold tracking-normal text-ink sm:text-[30px]">
           Une méthode simple en 4 étapes
         </h2>
         <p className="mt-3 text-center text-[14px] font-medium text-ink-soft">
@@ -37,10 +37,10 @@ export function MethodSection() {
         </p>
       </Reveal>
 
-      <div className="relative mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-9">
+      <div className="relative mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-9">
         {steps.map((step, i) => (
           <Reveal key={step.title} delay={i * 90}>
-            <div className="relative flex min-h-[198px] flex-col items-center rounded-2xl border border-black/[0.04] bg-white px-6 pb-6 pt-10 text-center shadow-[0_16px_42px_-30px_rgba(14,21,48,0.28)] lg:min-h-[218px] lg:pt-11">
+            <div className="relative flex min-h-[184px] flex-col items-center rounded-2xl border border-black/[0.04] bg-white px-6 pb-6 pt-10 text-center shadow-[0_16px_42px_-30px_rgba(14,21,48,0.28)] lg:min-h-[218px] lg:pt-11">
               {i < steps.length - 1 && (
                 <span
                   aria-hidden

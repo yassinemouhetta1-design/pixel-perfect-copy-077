@@ -10,7 +10,7 @@ const trustChips = [
 
 export function Hero() {
   return (
-    <section className="relative z-0 overflow-hidden bg-[linear-gradient(180deg,#edf3ff_0%,#f5f8ff_60%,#ffffff_82%)] pt-20">
+    <section className="relative z-0 overflow-hidden bg-[linear-gradient(180deg,#edf3ff_0%,#f5f8ff_60%,#ffffff_82%)] pt-16 sm:pt-20">
       <div
         aria-hidden
         className="pointer-events-none absolute right-[-90px] top-0 z-0 hidden h-[760px] w-[860px] overflow-hidden lg:block"
@@ -30,9 +30,9 @@ export function Hero() {
         className="pointer-events-none absolute right-[-120px] top-[-60px] size-[760px] rounded-full bg-[radial-gradient(circle,rgba(190,210,255,0.42)_0%,rgba(210,225,255,0.18)_55%,transparent_76%)] blur-[2px]"
       />
 
-      <div className="relative z-10 mx-auto grid min-h-[690px] w-full max-w-[1460px] grid-cols-1 items-start gap-10 px-8 pb-8 lg:grid-cols-[570px_minmax(0,1fr)] lg:px-12">
-        <div className="relative z-10 min-w-0 pt-16">
-          <h1 className="max-w-[610px] text-[52px] font-extrabold leading-[1.04] tracking-normal text-ink sm:text-[60px] lg:text-[58px]">
+      <div className="relative z-10 mx-auto grid min-h-0 w-full max-w-[1460px] grid-cols-1 items-start gap-4 px-5 pb-8 pt-5 sm:gap-8 sm:px-8 sm:pt-10 lg:min-h-[690px] lg:grid-cols-[570px_minmax(0,1fr)] lg:px-12 lg:pt-0">
+        <div className="relative z-10 min-w-0 pt-8 text-center sm:pt-12 lg:pt-16 lg:text-left">
+          <h1 className="mx-auto max-w-[610px] text-[42px] font-extrabold leading-[1.03] tracking-normal text-ink sm:text-[60px] lg:mx-0 lg:text-[58px]">
             Moins de
             <br />
             copier-coller.
@@ -60,13 +60,13 @@ export function Hero() {
             </span>
           </h1>
 
-          <p className="mt-8 max-w-[470px] text-[18px] font-medium leading-[1.75] text-ink">
+          <p className="mx-auto mt-7 max-w-[470px] text-[16px] font-medium leading-[1.65] text-ink sm:text-[18px] lg:mx-0 lg:leading-[1.75]">
             Un atelier IA à distance pour repérer les tâches répétitives et tester des usages
             concrets.
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-8">
-            <BrandButton className="whitespace-nowrap rounded-xl px-8 py-5 text-[16px]">
+          <div className="mt-8 flex flex-col items-center gap-4 sm:mt-10 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-8 lg:justify-start">
+            <BrandButton className="w-full max-w-[310px] whitespace-nowrap rounded-xl px-7 py-5 text-[15px] sm:w-auto sm:max-w-none sm:px-8 sm:text-[16px]">
               Réserver un échange
               <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
             </BrandButton>
@@ -77,7 +77,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="mt-14 flex flex-nowrap items-center gap-5">
+          <div className="mt-8 grid grid-cols-1 gap-3 sm:mt-14 sm:flex sm:flex-nowrap sm:items-center sm:gap-5">
             {trustChips.map((chip) => (
               <span
                 key={chip.label}
@@ -90,7 +90,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto mt-6 aspect-[1.503] w-full max-w-[940px] drop-shadow-[0_36px_60px_rgba(18,45,120,0.10)] lg:ml-0 lg:-mr-8 lg:mt-[54px] lg:scale-100 lg:origin-center">
+        <div className="relative mx-auto mt-2 aspect-[1.503] w-[118%] max-w-[560px] -translate-x-[2%] drop-shadow-[0_36px_60px_rgba(18,45,120,0.10)] sm:w-full sm:max-w-[760px] lg:ml-0 lg:-mr-8 lg:mt-[54px] lg:max-w-[940px] lg:translate-x-0 lg:scale-100 lg:origin-center">
           {/* Le piédestal 3D blanc de support des éléments (agrandi à 110% et fondu dans le blanc) */}
           <div 
             className="absolute left-[-5%] w-[110%] aspect-[5.39] z-30 pointer-events-none"
@@ -111,7 +111,7 @@ export function Hero() {
           </div>
 
           {/* Ligne de repère horizontale au bas de la table (110.7%) */}
-          <div className="absolute left-0 right-0 h-px bg-red-500 z-50 pointer-events-none" style={{ top: '110.7%' }} />
+          <div className="absolute left-0 right-0 hidden h-px bg-red-500 z-50 pointer-events-none lg:block" style={{ top: '110.7%' }} />
 
           {/* Sol blanc avec dégradé progressif à partir du bas de la table */}
           <div 
@@ -171,7 +171,7 @@ export function Hero() {
           </div>
 
           {/* Le livre bleu */}
-          <div className="absolute inset-0 z-45 translate-x-[calc(8%+50px)] translate-y-[30px]">
+          <div className="absolute inset-0 z-45 translate-x-[12%] translate-y-[16px] sm:translate-x-[calc(8%+50px)] sm:translate-y-[30px]">
             {/* Ombre de contact du livre */}
             <div 
               className="absolute bg-slate-900/22 rounded-full blur-[4px] pointer-events-none"
@@ -194,7 +194,7 @@ export function Hero() {
           </div>
 
           {/* Le mug YX Automation */}
-          <div className="absolute inset-0 z-45 translate-x-[150px] translate-y-[30px]">
+          <div className="absolute inset-0 z-45 translate-x-[18%] translate-y-[18px] sm:translate-x-[150px] sm:translate-y-[30px]">
             {/* Ombre de contact du mug */}
             <div 
               className="absolute bg-slate-900/26 rounded-full blur-[3px] pointer-events-none"
