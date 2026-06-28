@@ -19,7 +19,7 @@ export function SiteHeader() {
               />
             </svg>
           </span>
-          <span className="text-[13px] font-extrabold tracking-tight text-ink sm:text-[15px]">YX AUTOMATION</span>
+          <span className="text-[13px] font-bold tracking-[-0.02em] text-ink sm:text-[15px]">YX AUTOMATION</span>
         </a>
 
         <nav className="hidden items-center gap-14 lg:flex">

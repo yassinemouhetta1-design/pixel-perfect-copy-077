@@ -32,7 +32,7 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto grid min-h-0 w-full max-w-[1460px] grid-cols-1 items-start gap-4 px-5 pb-8 pt-5 sm:gap-8 sm:px-8 sm:pt-10 lg:min-h-[690px] lg:grid-cols-[570px_minmax(0,1fr)] lg:px-12 lg:pt-0">
         <div className="relative z-10 min-w-0 pt-8 text-center sm:pt-12 lg:pt-16 lg:text-left">
-          <h1 className="mx-auto max-w-[610px] text-[42px] font-extrabold leading-[1.03] tracking-normal text-ink sm:text-[60px] lg:mx-0 lg:text-[58px]">
+          <h1 className="mx-auto max-w-[610px] text-[42px] font-bold leading-[1.03] tracking-[-0.03em] text-ink sm:text-[60px] lg:mx-0 lg:text-[58px]">
             Moins de
             <br />
             copier-coller.
@@ -71,7 +71,7 @@ export function Hero() {
               <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
             </BrandButton>
 
-            <div className="inline-flex items-center gap-3 text-[15px] font-extrabold text-ink">
+            <div className="inline-flex items-center gap-3 text-[15px] font-semibold text-ink">
               <Tag className="size-5 text-brand" />
               690 € HT
             </div>
@@ -81,7 +81,7 @@ export function Hero() {
             {trustChips.map((chip) => (
               <span
                 key={chip.label}
-                className="inline-flex items-center gap-2 rounded-xl bg-white/95 px-4 py-3 text-[13px] font-bold text-ink shadow-[0_16px_34px_-22px_rgba(14,21,48,0.38)] ring-1 ring-black/5 whitespace-nowrap"
+                className="inline-flex items-center gap-2 rounded-lg bg-white/95 px-4 py-3 text-[13px] font-semibold text-ink shadow-[0_12px_24px_-22px_rgba(14,21,48,0.34)] ring-1 ring-black/5 whitespace-nowrap"
               >
                 <span className="text-brand shrink-0">{chip.icon}</span>
                 {chip.label}
@@ -109,9 +109,6 @@ export function Hero() {
               priority
             />
           </div>
-
-          {/* Ligne de repère horizontale au bas de la table (110.7%) */}
-          <div className="absolute left-0 right-0 hidden h-px bg-red-500 z-50 pointer-events-none lg:block" style={{ top: '110.7%' }} />
 
           {/* Sol blanc avec dégradé progressif à partir du bas de la table */}
           <div 

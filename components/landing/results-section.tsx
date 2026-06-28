@@ -39,7 +39,7 @@ export function ResultsSection() {
         <div className="grid grid-cols-1 items-start gap-9 lg:grid-cols-[0.43fr_0.57fr] lg:gap-12">
           <div className="pt-0 text-center lg:pt-4 lg:text-left">
             <Badge className="px-5 py-2.5 text-[13px] sm:text-[15px]">Des bénéfices concrets</Badge>
-            <h2 className="mx-auto mt-6 max-w-[620px] text-[30px] font-extrabold leading-[1.14] tracking-normal text-ink sm:text-[38px] lg:mx-0 lg:mt-8">
+            <h2 className="mx-auto mt-6 max-w-[620px] text-[30px] font-bold leading-[1.14] tracking-[-0.02em] text-ink sm:text-[38px] lg:mx-0 lg:mt-8">
               Des résultats visibles dès les premières semaines.
             </h2>
 
@@ -50,7 +50,7 @@ export function ResultsSection() {
                     {benefit.icon}
                   </span>
                   <div>
-                    <h3 className="text-[18px] font-extrabold text-ink">{benefit.title}</h3>
+                    <h3 className="text-[18px] font-bold text-ink">{benefit.title}</h3>
                     <p className="mt-2 text-[15px] font-medium leading-[1.65] text-ink-soft sm:mt-4 sm:text-[17px] sm:leading-[1.75]">
                       {benefit.description}
                     </p>
@@ -67,7 +67,7 @@ export function ResultsSection() {
                   key={stat.label}
                   className="min-h-[94px] rounded-2xl bg-white p-4 shadow-[0_18px_38px_-26px_rgba(14,21,48,0.25)] ring-1 ring-black/[0.04] sm:min-h-[136px] sm:rounded-3xl sm:p-5"
                 >
-                  <p className="text-[11px] font-extrabold leading-tight text-[#0e1530] sm:text-[16px]">
+                  <p className="text-[11px] font-bold leading-tight text-[#0e1530] sm:text-[16px]">
                     {stat.label}
                   </p>
                   <div className="mt-3 flex items-center gap-2 sm:mt-6 sm:gap-3">
@@ -92,7 +92,7 @@ export function ResultsSection() {
                       </svg>
                     )}
                     <div>
-                      <p className="text-[24px] font-extrabold leading-none text-[#0e1530] sm:text-[40px]">
+                      <p className="text-[24px] font-bold leading-none text-[#0e1530] sm:text-[40px]">
                         {stat.value}
                       </p>
                       <p className="mt-1 text-[10px] font-medium text-[#64748b] sm:mt-2 sm:text-[15px]">
@@ -164,7 +164,7 @@ export function ResultsSection() {
               />
 
               <div className="absolute right-2 top-2 z-30 w-[48%] max-w-[180px] rounded-2xl bg-white p-3 shadow-[0_18px_42px_-24px_rgba(14,21,48,0.25)] sm:left-[44%] sm:right-auto sm:top-[6%] sm:w-[34%] sm:max-w-[200px] sm:rounded-3xl sm:p-4">
-                <p className="text-center text-[12px] font-extrabold text-ink sm:text-[14px]">Productivité</p>
+                <p className="text-center text-[12px] font-bold text-ink sm:text-[14px]">Productivité</p>
                 <svg viewBox="0 0 220 95" className="mt-1 h-14 w-full sm:mt-2 sm:h-20" aria-hidden>
                   <defs>
                     <linearGradient id="productivity-gradient" x1="0" y1="0" x2="0" y2="1">

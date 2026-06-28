@@ -15,7 +15,7 @@ export function FinalCta() {
                 <CalendarDays className="size-7" />
               </span>
               <div>
-                <h2 className="max-w-sm text-[23px] font-extrabold leading-[1.14] text-ink sm:text-[25px]">
+                <h2 className="max-w-sm text-[23px] font-bold leading-[1.14] tracking-[-0.02em] text-ink sm:text-[25px]">
                   Prêt à reprendre le contrôle de votre temps ?
                 </h2>
                 <p className="mt-4 max-w-md text-[13px] font-medium leading-[1.85] text-ink-soft">
@@ -53,11 +53,11 @@ export function FinalCta() {
 
             <div className="mt-8 flex flex-col items-start justify-between gap-5 sm:mt-9 sm:flex-row sm:items-end sm:gap-4">
               <div className="flex items-center gap-3">
-                <span className="flex size-11 items-center justify-center rounded-full bg-brand-soft text-sm font-extrabold text-brand">
+                <span className="flex size-11 items-center justify-center rounded-full bg-brand-soft text-sm font-bold text-brand">
                   CL
                 </span>
                 <div>
-                  <p className="text-[13px] font-extrabold text-ink">Claire L.</p>
+                  <p className="text-[13px] font-bold text-ink">Claire L.</p>
                   <p className="text-[11px] font-medium text-ink-soft">
                     Responsable administrative - PME
                   </p>

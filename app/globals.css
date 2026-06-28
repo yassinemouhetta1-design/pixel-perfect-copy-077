@@ -5,11 +5,11 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-heading: var(--font-inter), 'Inter Fallback', sans-serif;
-  --font-sans: var(--font-inter), 'Inter Fallback', sans-serif;
-  --font-mono: var(--font-inter), 'Inter Fallback', sans-serif;
+  --font-heading: var(--font-plex), 'Segoe UI', sans-serif;
+  --font-sans: var(--font-plex), 'Segoe UI', sans-serif;
+  --font-mono: var(--font-plex), 'Segoe UI', sans-serif;
 
-  --color-brand: #2148ff;
+  --color-brand: #1554d1;
   --color-brand-dark: #0b1b6b;
   --color-brand-foreground: #ffffff;
   --color-brand-50: #eef2ff;
@@ -68,7 +68,7 @@
   --card-foreground: #0e1530;
   --popover: #ffffff;
   --popover-foreground: #0e1530;
-  --primary: #2148ff;
+  --primary: #1554d1;
   --primary-foreground: #ffffff;
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);

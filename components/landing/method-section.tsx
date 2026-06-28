@@ -29,7 +29,7 @@ export function MethodSection() {
   return (
     <Section className="py-10 lg:py-10">
       <Reveal>
-        <h2 className="text-center text-[26px] font-extrabold tracking-normal text-ink sm:text-[30px]">
+        <h2 className="text-center text-[26px] font-bold tracking-[-0.02em] text-ink sm:text-[30px]">
           Une méthode simple en 4 étapes
         </h2>
         <p className="mt-3 text-center text-[14px] font-medium text-ink-soft">
@@ -47,13 +47,13 @@ export function MethodSection() {
                   className="absolute left-[calc(100%-0.5rem)] top-[86px] hidden h-px w-11 border-t-2 border-dashed border-brand/35 lg:block"
                 />
               )}
-              <span className="absolute -top-4 flex size-8 items-center justify-center rounded-full bg-brand text-sm font-extrabold text-white shadow-[0_10px_22px_-12px_rgba(33,72,255,0.7)]">
+              <span className="absolute -top-4 flex size-8 items-center justify-center rounded-full bg-brand text-sm font-bold text-white shadow-[0_8px_18px_-14px_rgba(14,21,48,0.6)]">
                 {i + 1}
               </span>
               <div className="flex size-[70px] items-center justify-center rounded-full bg-brand-soft text-brand">
                 {step.icon}
               </div>
-              <h3 className="mt-6 text-[16px] font-extrabold text-ink">{step.title}</h3>
+              <h3 className="mt-6 text-[16px] font-bold text-ink">{step.title}</h3>
               <p className="mt-3 text-[13px] font-medium leading-[1.75] text-ink-soft">
                 {step.description}
               </p>

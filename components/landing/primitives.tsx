@@ -36,11 +36,11 @@ export function BrandButton({
   return (
     <button
       className={cn(
-        'group inline-flex items-center justify-center gap-2.5 rounded-2xl px-6 py-4 text-[15px] font-semibold leading-none transition-all duration-200 outline-none focus-visible:ring-4 focus-visible:ring-brand/30',
+        'group inline-flex items-center justify-center gap-2.5 rounded-[14px] px-6 py-4 text-[15px] font-semibold leading-none transition-all duration-200 outline-none focus-visible:ring-4 focus-visible:ring-brand/20',
         variant === 'primary' &&
-          'bg-brand text-brand-foreground shadow-[0_12px_28px_-8px_rgba(33,72,255,0.55)] hover:-translate-y-0.5 hover:bg-[#1a3ce6] hover:shadow-[0_18px_34px_-8px_rgba(33,72,255,0.6)] active:translate-y-0',
+          'bg-brand text-brand-foreground shadow-[0_10px_22px_-16px_rgba(14,21,48,0.55)] hover:bg-[#0f47bd] active:translate-y-px',
         variant === 'ghost' &&
-          'bg-white text-ink shadow-sm ring-1 ring-black/5 hover:bg-brand-50',
+          'bg-white text-ink shadow-none ring-1 ring-black/10 hover:bg-brand-50',
         className,
       )}
       {...props}
@@ -84,7 +84,7 @@ export function Badge({
   return (
     <span
       className={cn(
-        'inline-flex items-center rounded-lg bg-brand-soft px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-brand',
+        'inline-flex items-center rounded-md bg-brand-soft px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-brand',
         className,
       )}
       {...props}
