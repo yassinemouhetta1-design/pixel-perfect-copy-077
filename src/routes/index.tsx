@@ -124,14 +124,14 @@ function Index() {
             </ul>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[560px] animate-fade-up" style={{ animationDelay: "120ms" }}>
-            <div className="absolute inset-0 -z-10 m-auto h-[80%] w-[80%] rounded-full bg-white/30 blur-3xl" />
+          <div className="relative mx-auto w-full max-w-[520px] animate-fade-up lg:ml-auto lg:mr-[-30px]" style={{ animationDelay: "120ms" }}>
+            <div className="absolute inset-0 -z-10 m-auto h-[70%] w-[70%] rounded-full halo-glow blur-2xl" />
             <img
               src={mascot}
               alt="Mascotte IA"
               width={1024}
               height={1024}
-              className="relative w-full animate-float-slow drop-shadow-[0_30px_40px_rgba(11,20,55,0.25)]"
+              className="relative w-full animate-float-slow drop-shadow-[0_30px_40px_rgba(11,20,55,0.22)]"
             />
           </div>
         </div>
