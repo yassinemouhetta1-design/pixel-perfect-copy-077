@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://pixel-perfect-copy-077.vercel.app/sitemap.xml',
+    sitemap: 'https://yx-automation.vercel.app/sitemap.xml',
   }
 }

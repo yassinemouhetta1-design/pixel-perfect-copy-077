@@ -15,7 +15,7 @@ const structuredData = {
   provider: {
     '@type': 'Organization',
     name: 'YX Automation',
-    url: 'https://pixel-perfect-copy-077.vercel.app',
+    url: 'https://yx-automation.vercel.app',
   },
   areaServed: {
     '@type': 'Country',
@@ -32,7 +32,7 @@ const structuredData = {
     price: '690',
     priceCurrency: 'EUR',
     availability: 'https://schema.org/InStock',
-    url: 'https://pixel-perfect-copy-077.vercel.app',
+    url: 'https://yx-automation.vercel.app',
   },
 }
 

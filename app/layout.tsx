@@ -10,7 +10,7 @@ const plex = IBM_Plex_Sans({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://pixel-perfect-copy-077.vercel.app'),
+  metadataBase: new URL('https://yx-automation.vercel.app'),
   title: {
     default: 'YX Automation - Atelier IA Terrain pour TPE et PME',
     template: '%s | YX Automation',
