@@ -234,21 +234,21 @@ function Index() {
           </Reveal>
 
           <Reveal delay={120}>
-            <Card tone="blue" className="relative overflow-hidden p-8 md:p-10">
-              <div className="relative z-10 md:pr-[180px]">
-                <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-white/85">
+            <Card tone="blue" className="relative h-full overflow-hidden p-8 sm:p-10 md:p-12">
+              <div className="relative z-10 sm:pr-[150px] md:pr-[200px]">
+                <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-white/85 sm:text-xs">
                   Atelier IA utile à distance
                 </p>
-                <div className="mt-5 text-[56px] font-extrabold leading-none">
-                  690 € <span className="text-xl font-bold align-top">HT</span>
+                <div className="mt-5 text-[64px] font-extrabold leading-none sm:text-[72px] md:text-[80px]">
+                  690 € <span className="text-2xl font-bold align-top md:text-3xl">HT</span>
                 </div>
-                <p className="mt-2 text-sm font-medium text-white/80">Offre unique</p>
-                <div className="mt-7">
-                  <Button variant="white" size="lg" leftIcon={<Calendar className="h-5 w-5" />} className="w-full md:w-auto transition-transform hover:-translate-y-0.5">
+                <p className="mt-3 text-base font-medium text-white/85 md:text-lg">Offre unique</p>
+                <div className="mt-8">
+                  <Button variant="white" size="lg" leftIcon={<Calendar className="h-5 w-5" />} className="w-full sm:w-auto transition-transform hover:-translate-y-0.5">
                     Réserver un échange
                   </Button>
                 </div>
-                <p className="mt-5 flex items-center gap-2 text-xs font-medium text-white/80">
+                <p className="mt-6 flex items-center gap-2 text-xs font-medium text-white/80 sm:text-sm">
                   <Lock className="h-3.5 w-3.5" /> Paiement par virement – Facture fournie
                 </p>
               </div>
@@ -259,7 +259,7 @@ function Index() {
                 loading="lazy"
                 width={816}
                 height={816}
-                className="pointer-events-none absolute right-[-30px] bottom-0 z-0 hidden h-[230px] w-auto object-contain drop-shadow-2xl md:block"
+                className="pointer-events-none absolute right-[-30px] bottom-0 z-0 hidden h-[230px] w-auto object-contain drop-shadow-2xl sm:block sm:h-[260px] md:h-[300px] lg:h-[320px]"
               />
             </Card>
           </Reveal>
