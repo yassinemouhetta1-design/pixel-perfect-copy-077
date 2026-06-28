@@ -28,7 +28,7 @@ export function Reveal({ children, delay = 0, className = "", as: Tag = "div" }:
           }
         }
       },
-      { rootMargin: "0px 0px -10% 0px", threshold: 0.08 }
+      { rootMargin: "0px 0px -10% 0px", threshold: 0.08 },
     );
     io.observe(el);
     return () => io.disconnect();

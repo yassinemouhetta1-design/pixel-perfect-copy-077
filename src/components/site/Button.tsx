@@ -11,7 +11,8 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variants: Record<Variant, string> = {
   primary: "cta-blue cta-blue-hover",
-  white: "bg-white text-[#2148ff] hover:bg-white/95 hover:-translate-y-px shadow-[0_8px_24px_-8px_rgb(33_72_255/0.25)]",
+  white:
+    "bg-white text-[#2148ff] hover:bg-white/95 hover:-translate-y-px shadow-[0_8px_24px_-8px_rgb(33_72_255/0.25)]",
   ghost: "bg-white/10 text-white hover:bg-white/20 backdrop-blur border border-white/25",
 };
 
