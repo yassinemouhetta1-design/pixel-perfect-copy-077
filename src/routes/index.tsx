@@ -68,7 +68,7 @@ function Index() {
   return (
     <main className="min-h-screen bg-white text-foreground">
       {/* HERO */}
-      <header className="relative overflow-hidden hero-gradient">
+      <header className="relative min-h-[720px] overflow-hidden hero-gradient md:min-h-[780px] lg:min-h-[820px]">
         {/* halo */}
         <div className="pointer-events-none absolute right-[2%] top-[12%] h-[640px] w-[640px] rounded-full halo-glow blur-2xl" />
 
@@ -79,15 +79,15 @@ function Index() {
           </Button>
         </div>
 
-        <div className="relative mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-10 px-5 pb-24 pt-10 md:px-8 md:pb-32 md:pt-14 lg:grid-cols-[1.05fr_1fr] lg:gap-6">
-          <div>
+        <div className="relative mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-6 px-5 pb-24 pt-10 md:px-8 md:pb-32 md:pt-14 lg:grid-cols-[0.92fr_1.08fr] lg:gap-2 xl:max-w-[1340px]">
+          <div className="relative z-10 lg:pt-4">
             <div className="animate-fade-up" style={{ animationDelay: "0ms" }}>
               <Badge tone="blue" className="shadow-[0_8px_24px_-8px_rgb(33_72_255/0.5)]">
                 <Sparkles className="h-3.5 w-3.5" /> Atelier IA utile à distance
               </Badge>
             </div>
 
-            <h1 className="mt-7 animate-fade-up text-[34px] font-extrabold leading-[1.1] tracking-[-0.025em] text-[#0b1437] sm:text-[40px] lg:text-[44px] xl:text-[48px]" style={{ animationDelay: "80ms" }}>
+            <h1 className="mt-7 max-w-[650px] animate-fade-up text-[34px] font-extrabold leading-[1.1] tracking-[-0.025em] text-[#0b1437] sm:text-[40px] lg:text-[48px] xl:text-[54px]" style={{ animationDelay: "80ms" }}>
               Faites gagner du temps
               <br />à vos équipes grâce
               <br />à une <span className="text-[#2148ff]">IA simple,</span>
@@ -124,14 +124,19 @@ function Index() {
             </ul>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[760px] min-w-0 animate-fade-up lg:ml-auto lg:mr-[-30px] lg:w-[120%]" style={{ animationDelay: "120ms" }}>
-            <div className="absolute inset-0 -z-10 m-auto h-[70%] w-[70%] rounded-full halo-glow blur-2xl" />
+          <div className="relative mx-auto mt-2 w-full max-w-[620px] min-w-0 animate-fade-up sm:max-w-[700px] lg:ml-[-20px] lg:mr-[-106px] lg:mt-0 lg:w-[118%] lg:max-w-[790px] xl:ml-[-34px] xl:mr-[-128px] xl:max-w-[850px]" style={{ animationDelay: "120ms" }}>
+            <div className="absolute inset-0 -z-10 m-auto h-[72%] w-[74%] rounded-full halo-glow blur-2xl" />
+            <div className="hero-trail pointer-events-none absolute left-[18%] top-[20%] z-0 hidden rotate-[18deg] md:block" />
+            <div className="hero-trail pointer-events-none absolute right-[10%] top-[24%] z-0 hidden -rotate-[18deg] md:block" />
+            <span className="hero-sparkle pointer-events-none absolute left-[25%] top-[16%] z-10 hidden h-4 w-4 md:block" />
+            <span className="hero-sparkle pointer-events-none absolute right-[16%] top-[21%] z-10 hidden h-3.5 w-3.5 md:block" />
+            <span className="hero-sparkle pointer-events-none absolute right-[5%] top-[46%] z-10 hidden h-4 w-4 md:block" />
             <img
               src={mascot}
               alt="Mascotte IA"
               width={1024}
               height={1024}
-              className="relative w-full animate-float-slow drop-shadow-[0_30px_40px_rgba(11,20,55,0.22)]"
+              className="relative z-[1] w-full animate-float-slow drop-shadow-[0_30px_40px_rgba(11,20,55,0.22)]"
             />
           </div>
         </div>
