@@ -76,32 +76,53 @@
 @utility hero-gradient {
   background:
     radial-gradient(
-      ellipse 45% 55% at 76% 38%,
-      rgba(37, 99, 235, 0.38) 0%,
-      rgba(96, 165, 250, 0.22) 36%,
-      rgba(147, 197, 253, 0.10) 55%,
-      rgba(147, 197, 253, 0) 70%
+      ellipse 55% 70% at 82% 42%,
+      rgba(33, 72, 255, 0.28) 0%,
+      rgba(88, 175, 255, 0.22) 30%,
+      rgba(188, 216, 255, 0.16) 52%,
+      rgba(255, 255, 255, 0) 72%
     ),
     radial-gradient(
-      ellipse 42% 28% at 75% 72%,
-      rgba(147, 197, 253, 0.18) 0%,
-      rgba(147, 197, 253, 0.08) 38%,
-      rgba(147, 197, 253, 0) 65%
+      ellipse 38% 42% at 66% 34%,
+      rgba(255, 255, 255, 0.62) 0%,
+      rgba(255, 255, 255, 0.30) 40%,
+      rgba(255, 255, 255, 0) 72%
+    ),
+    radial-gradient(
+      ellipse 70% 45% at 82% 100%,
+      rgba(33, 72, 255, 0.30) 0%,
+      rgba(126, 164, 255, 0.20) 36%,
+      rgba(255, 255, 255, 0) 70%
     ),
     linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.28) 0%,
-      rgba(255, 255, 255, 0.05) 48%,
-      rgba(37, 99, 235, 0.18) 100%
+      #ffffff 0%,
+      #f7fbff 24%,
+      #dceaff 56%,
+      #a8c5ff 100%
     ),
     linear-gradient(
       180deg,
-      #58AFFF 0%,
-      #8EC8FF 22%,
-      #C9E3FF 48%,
-      #EEF7FF 72%,
+      #f8fbff 0%,
+      #edf5ff 34%,
+      #dfeaff 62%,
       #FFFFFF 100%
     );
+}
+
+@utility hero-trail {
+  width: 56%;
+  height: 48%;
+  border: 3px dotted rgb(255 255 255 / 0.72);
+  border-color: rgb(255 255 255 / 0.72) transparent transparent transparent;
+  border-radius: 9999px;
+  filter: drop-shadow(0 0 8px rgb(255 255 255 / 0.6));
+}
+
+@utility hero-sparkle {
+  background: white;
+  clip-path: polygon(50% 0%, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0% 50%, 38% 38%);
+  filter: drop-shadow(0 0 9px rgb(255 255 255 / 0.95));
 }
 
 @utility halo-glow {
