@@ -68,7 +68,7 @@ function Index() {
   return (
     <main className="min-h-screen bg-white text-foreground">
       {/* HERO */}
-      <header className="relative min-h-[680px] overflow-hidden hero-gradient md:min-h-[720px] lg:min-h-[760px]">
+      <header className="relative min-h-[700px] overflow-hidden hero-gradient md:min-h-[750px] lg:min-h-[820px]">
         {/* halo */}
         <div className="pointer-events-none absolute right-[2%] top-[12%] h-[640px] w-[640px] rounded-full halo-glow blur-2xl" />
 
@@ -79,8 +79,8 @@ function Index() {
           </Button>
         </div>
 
-        <div className="relative mx-auto grid w-full max-w-[1360px] grid-cols-1 gap-6 px-5 pb-20 pt-10 md:px-8 md:pb-24 md:pt-12 lg:grid-cols-[640px_1fr] lg:gap-0 lg:px-0 xl:grid-cols-[670px_1fr]">
-          <div className="relative z-10 lg:pt-2">
+        <div className="relative mx-auto grid w-full max-w-[1360px] grid-cols-1 gap-6 px-5 pb-24 pt-12 md:px-8 md:pb-28 md:pt-16 lg:grid-cols-[640px_1fr] lg:gap-0 lg:px-0 xl:grid-cols-[670px_1fr]">
+          <div className="relative z-10 lg:pt-5">
             <div className="animate-fade-up" style={{ animationDelay: "0ms" }}>
               <Badge tone="blue" className="shadow-[0_8px_24px_-8px_rgb(33_72_255/0.5)]">
                 <Sparkles className="h-3.5 w-3.5" /> Atelier IA utile à distance
@@ -124,7 +124,7 @@ function Index() {
             </ul>
           </div>
 
-          <div className="relative mx-auto mt-2 w-full max-w-[560px] min-w-0 animate-fade-up sm:max-w-[620px] lg:ml-[18px] lg:mr-auto lg:mt-0 lg:w-[560px] lg:max-w-none xl:ml-[34px] xl:w-[610px]" style={{ animationDelay: "120ms" }}>
+          <div className="relative mx-auto mt-2 w-full max-w-[540px] min-w-0 animate-fade-up sm:max-w-[590px] lg:ml-[54px] lg:mr-auto lg:mt-2 lg:w-[535px] lg:max-w-none xl:ml-[80px] xl:w-[565px]" style={{ animationDelay: "120ms" }}>
             <div className="absolute inset-0 -z-10 m-auto h-[72%] w-[74%] rounded-full halo-glow blur-2xl" />
             <div className="hero-trail pointer-events-none absolute left-[18%] top-[20%] z-0 hidden rotate-[18deg] md:block" />
             <div className="hero-trail pointer-events-none absolute right-[10%] top-[24%] z-0 hidden -rotate-[18deg] md:block" />
