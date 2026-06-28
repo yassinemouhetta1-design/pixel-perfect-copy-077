@@ -75,9 +75,9 @@
 
 @utility hero-gradient {
   background:
-    radial-gradient(1200px 600px at 78% 35%, rgb(120 160 255 / 0.55), transparent 60%),
-    radial-gradient(900px 500px at 100% 0%, rgb(180 205 255 / 0.5), transparent 55%),
-    linear-gradient(160deg, #cdddff 0%, #9fb9ff 38%, #6f93ff 72%, #2148ff 100%);
+    radial-gradient(900px 520px at 78% 55%, rgb(116 156 255 / 0.55), transparent 65%),
+    radial-gradient(700px 420px at 12% 18%, rgb(255 255 255 / 0.85), transparent 60%),
+    linear-gradient(170deg, #f1f5ff 0%, #dfe9ff 35%, #b9cdff 65%, #7e9eff 100%);
 }
 
 @utility halo-glow {
