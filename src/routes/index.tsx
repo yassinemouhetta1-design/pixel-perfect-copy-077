@@ -72,14 +72,14 @@ function Index() {
         {/* halo */}
         <div className="pointer-events-none absolute right-[2%] top-[12%] h-[640px] w-[640px] rounded-full halo-glow blur-2xl" />
 
-        <div className="relative mx-auto flex w-full max-w-[1240px] items-center justify-between px-5 pt-6 md:px-8 md:pt-8">
+        <div className="relative mx-auto flex w-full max-w-[1360px] items-center justify-between px-5 pt-6 md:px-8 md:pt-8 lg:px-0">
           <Logo />
           <Button variant="primary" size="md" leftIcon={<Calendar className="h-4 w-4" />}>
             Réserver un échange
           </Button>
         </div>
 
-        <div className="relative mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-6 px-5 pb-24 pt-10 md:px-8 md:pb-32 md:pt-14 lg:grid-cols-[670px_1fr] lg:gap-0 xl:max-w-[1340px]">
+        <div className="relative mx-auto grid w-full max-w-[1360px] grid-cols-1 gap-6 px-5 pb-24 pt-10 md:px-8 md:pb-28 md:pt-14 lg:grid-cols-[640px_1fr] lg:gap-10 lg:px-0 xl:grid-cols-[670px_1fr]">
           <div className="relative z-10 lg:pt-4">
             <div className="animate-fade-up" style={{ animationDelay: "0ms" }}>
               <Badge tone="blue" className="shadow-[0_8px_24px_-8px_rgb(33_72_255/0.5)]">
@@ -124,7 +124,7 @@ function Index() {
             </ul>
           </div>
 
-          <div className="relative mx-auto mt-2 w-full max-w-[620px] min-w-0 animate-fade-up sm:max-w-[700px] lg:ml-[-10px] lg:mr-[-44px] lg:mt-0 lg:w-[112%] lg:max-w-[690px] xl:ml-[-8px] xl:mr-[-78px] xl:max-w-[735px]" style={{ animationDelay: "120ms" }}>
+          <div className="relative mx-auto mt-2 w-full max-w-[560px] min-w-0 animate-fade-up sm:max-w-[620px] lg:ml-auto lg:mr-0 lg:mt-4 lg:w-[560px] lg:max-w-none xl:w-[610px]" style={{ animationDelay: "120ms" }}>
             <div className="absolute inset-0 -z-10 m-auto h-[72%] w-[74%] rounded-full halo-glow blur-2xl" />
             <div className="hero-trail pointer-events-none absolute left-[18%] top-[20%] z-0 hidden rotate-[18deg] md:block" />
             <div className="hero-trail pointer-events-none absolute right-[10%] top-[24%] z-0 hidden -rotate-[18deg] md:block" />
