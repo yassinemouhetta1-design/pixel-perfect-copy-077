@@ -79,7 +79,7 @@ function Index() {
           </Button>
         </div>
 
-        <div className="relative mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-6 px-5 pb-24 pt-10 md:px-8 md:pb-32 md:pt-14 lg:grid-cols-[0.92fr_1.08fr] lg:gap-2 xl:max-w-[1340px]">
+        <div className="relative mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-6 px-5 pb-24 pt-10 md:px-8 md:pb-32 md:pt-14 lg:grid-cols-[670px_1fr] lg:gap-0 xl:max-w-[1340px]">
           <div className="relative z-10 lg:pt-4">
             <div className="animate-fade-up" style={{ animationDelay: "0ms" }}>
               <Badge tone="blue" className="shadow-[0_8px_24px_-8px_rgb(33_72_255/0.5)]">
@@ -87,8 +87,8 @@ function Index() {
               </Badge>
             </div>
 
-            <h1 className="mt-7 max-w-[650px] animate-fade-up text-[34px] font-extrabold leading-[1.1] tracking-[-0.025em] text-[#0b1437] sm:text-[40px] lg:text-[48px] xl:text-[54px]" style={{ animationDelay: "80ms" }}>
-              Faites gagner du temps
+            <h1 className="mt-7 max-w-[670px] animate-fade-up text-[34px] font-extrabold leading-[1.1] tracking-[-0.025em] text-[#0b1437] sm:text-[40px] lg:text-[48px] xl:text-[52px]" style={{ animationDelay: "80ms" }}>
+              <span className="whitespace-nowrap">Faites gagner du temps</span>
               <br />à vos équipes grâce
               <br />à une <span className="text-[#2148ff]">IA simple,</span>
               <br />
@@ -124,7 +124,7 @@ function Index() {
             </ul>
           </div>
 
-          <div className="relative mx-auto mt-2 w-full max-w-[620px] min-w-0 animate-fade-up sm:max-w-[700px] lg:ml-[-20px] lg:mr-[-106px] lg:mt-0 lg:w-[118%] lg:max-w-[790px] xl:ml-[-34px] xl:mr-[-128px] xl:max-w-[850px]" style={{ animationDelay: "120ms" }}>
+          <div className="relative mx-auto mt-2 w-full max-w-[620px] min-w-0 animate-fade-up sm:max-w-[700px] lg:ml-[-10px] lg:mr-[-44px] lg:mt-0 lg:w-[112%] lg:max-w-[690px] xl:ml-[-8px] xl:mr-[-78px] xl:max-w-[735px]" style={{ animationDelay: "120ms" }}>
             <div className="absolute inset-0 -z-10 m-auto h-[72%] w-[74%] rounded-full halo-glow blur-2xl" />
             <div className="hero-trail pointer-events-none absolute left-[18%] top-[20%] z-0 hidden rotate-[18deg] md:block" />
             <div className="hero-trail pointer-events-none absolute right-[10%] top-[24%] z-0 hidden -rotate-[18deg] md:block" />
