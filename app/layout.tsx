@@ -10,10 +10,65 @@ const plex = IBM_Plex_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'YX Automation - Atelier IA Terrain',
+  metadataBase: new URL('https://pixel-perfect-copy-077.vercel.app'),
+  title: {
+    default: 'YX Automation - Atelier IA Terrain pour TPE et PME',
+    template: '%s | YX Automation',
+  },
   description:
-    "En 2 demi-journées, on identifie vos tâches répétitives, on teste l'IA sur vos vrais cas métiers et vous repartez avec un plan d'action simple.",
-  generator: 'v0.app',
+    "Atelier IA à distance pour aider les TPE et petites PME à repérer leurs tâches répétitives, tester l'IA sur des cas concrets et repartir avec un plan d'action simple.",
+  applicationName: 'YX Automation',
+  authors: [{ name: 'YX Automation' }],
+  creator: 'YX Automation',
+  publisher: 'YX Automation',
+  keywords: [
+    'atelier IA',
+    'automatisation TPE',
+    'automatisation PME',
+    'intelligence artificielle entreprise',
+    'gain de temps entreprise',
+    'tâches répétitives',
+    'diagnostic IA',
+    'YX Automation',
+  ],
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'fr_FR',
+    url: '/',
+    siteName: 'YX Automation',
+    title: 'YX Automation - Moins de copier-coller, plus de temps utile',
+    description:
+      "Un atelier IA à distance pour repérer les tâches répétitives, tester des usages concrets et préparer un plan d'action simple.",
+    images: [
+      {
+        url: '/images/hero-robot-padded.png',
+        width: 1200,
+        height: 630,
+        alt: 'Mascotte YX Automation pour Atelier IA Terrain',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'YX Automation - Atelier IA Terrain',
+    description:
+      "Repérez vos tâches répétitives, testez l'IA sur des cas concrets et repartez avec un plan d'action simple.",
+    images: ['/images/hero-robot-padded.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
   icons: {
     icon: [
       {
@@ -35,7 +90,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: '#2148ff',
+  themeColor: '#1554d1',
 }
 
 export default function RootLayout({
