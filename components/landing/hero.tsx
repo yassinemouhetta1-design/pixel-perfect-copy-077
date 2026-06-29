@@ -3,9 +3,9 @@ import { ArrowRight, ShieldCheck, Timer, Users, Tag } from 'lucide-react'
 import { BrandButton } from './primitives'
 
 const trustChips = [
-  { icon: <ShieldCheck className="size-4" />, label: 'Sécurisé & confidentiel' },
-  { icon: <Timer className="size-4" />, label: 'Réponse sous 24h' },
-  { icon: <Users className="size-4" />, label: 'Sans engagement' },
+  { icon: <ShieldCheck className="size-4" />, label: 'Analyse terrain' },
+  { icon: <Timer className="size-4" />, label: 'Prototype simple inclus' },
+  { icon: <Users className="size-4" />, label: 'Plan d’action priorisé' },
 ]
 
 export function Hero() {
@@ -30,7 +30,7 @@ export function Hero() {
         className="pointer-events-none absolute right-[-120px] top-[-60px] size-[760px] rounded-full bg-[radial-gradient(circle,rgba(190,210,255,0.42)_0%,rgba(210,225,255,0.18)_55%,transparent_76%)] blur-[2px]"
       />
 
-      <div className="relative z-10 mx-auto grid min-h-0 w-full max-w-[1460px] grid-cols-1 items-start gap-4 px-5 pb-8 pt-5 sm:gap-8 sm:px-8 sm:pt-10 lg:min-h-[690px] lg:grid-cols-[570px_minmax(0,1fr)] lg:px-12 lg:pt-0">
+      <div className="relative z-10 mx-auto grid min-h-0 w-full max-w-[1460px] grid-cols-1 items-start gap-4 px-5 pb-4 pt-5 sm:gap-8 sm:px-8 sm:pt-10 lg:min-h-[620px] lg:grid-cols-[570px_minmax(0,1fr)] lg:px-12 lg:pb-0 lg:pt-0">
         <div className="relative z-10 min-w-0 pt-8 text-center sm:pt-12 lg:pt-16 lg:text-left">
           <h1 className="mx-auto max-w-[610px] text-[42px] font-bold leading-[1.03] tracking-[-0.03em] text-ink sm:text-[60px] lg:mx-0 lg:text-[58px]">
             Moins de
@@ -61,19 +61,19 @@ export function Hero() {
           </h1>
 
           <p className="mx-auto mt-7 max-w-[470px] text-[16px] font-medium leading-[1.65] text-ink sm:text-[18px] lg:mx-0 lg:leading-[1.75]">
-            Un atelier IA à distance pour repérer les tâches répétitives et tester des usages
-            concrets.
+            En 2 demi-journées, nous analysons vos outils et vos processus, puis nous concevons une
+            première solution IA simple pour réduire le temps consacré aux tâches répétitives.
           </p>
 
           <div className="mt-8 flex flex-col items-center gap-4 sm:mt-10 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-8 lg:justify-start">
-            <BrandButton className="w-full max-w-[310px] whitespace-nowrap rounded-xl px-7 py-5 text-[15px] sm:w-auto sm:max-w-none sm:px-8 sm:text-[16px]">
-              Réserver un échange
+            <BrandButton href="#contact" className="w-full max-w-[310px] whitespace-nowrap rounded-xl px-7 py-5 text-[15px] sm:w-auto sm:max-w-none sm:px-8 sm:text-[16px]">
+              Réserver un entretien de cadrage
               <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
             </BrandButton>
 
             <div className="inline-flex items-center gap-3 text-[15px] font-semibold text-ink">
               <Tag className="size-5 text-brand" />
-              690 € HT
+              Atelier IA Terrain · 690 € HT
             </div>
           </div>
 
@@ -90,7 +90,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto mt-2 aspect-[1.503] w-[118%] max-w-[560px] -translate-x-[2%] drop-shadow-[0_36px_60px_rgba(18,45,120,0.10)] sm:w-full sm:max-w-[760px] lg:ml-0 lg:-mr-8 lg:mt-[54px] lg:max-w-[940px] lg:translate-x-0 lg:scale-100 lg:origin-center">
+        <div className="relative mx-auto mt-2 aspect-[1.503] w-[118%] max-w-[560px] -translate-x-[2%] drop-shadow-[0_36px_60px_rgba(18,45,120,0.10)] sm:w-full sm:max-w-[760px] lg:ml-0 lg:-mr-8 lg:mt-[28px] lg:max-w-[880px] lg:translate-x-0 lg:scale-100 lg:origin-center">
           {/* Le piédestal 3D blanc de support des éléments (agrandi à 110% et fondu dans le blanc) */}
           <div 
             className="absolute left-[-5%] w-[110%] aspect-[5.39] z-30 pointer-events-none"

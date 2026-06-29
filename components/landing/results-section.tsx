@@ -6,30 +6,30 @@ import { Reveal } from './reveal'
 const benefits = [
   {
     icon: <Clock className="size-7" />,
-    title: 'Gain de temps',
-    description: "Jusqu'à plusieurs heures gagnées chaque semaine.",
+    title: 'Temps récupérable',
+    description: 'Les tâches lentes sont chiffrées avant de décider quoi automatiser.',
   },
   {
     icon: <Target className="size-7" />,
-    title: "Moins d'erreurs",
-    description: 'Des processus fiabilisés et standardisés.',
+    title: 'Moins de tâches faibles valeur',
+    description: 'On cible les tâches répétitives, pas les sujets stratégiques.',
   },
   {
     icon: <Smile className="size-7" />,
-    title: 'Moins de charge mentale',
-    description: 'Moins de tâches répétitives, plus de concentration.',
+    title: 'Plus de clarté',
+    description: 'Vous savez où l’IA est utile, où elle ne l’est pas, et pourquoi.',
   },
   {
     icon: <TrendingUp className="size-7" />,
-    title: 'Plus de visibilité',
-    description: 'Des données fiables et accessibles.',
+    title: 'Suite priorisée',
+    description: 'Vous repartez avec les prochaines automatisations à lancer en priorité.',
   },
 ]
 
 const stats = [
-  { label: 'Temps gagné', value: '+3h', sub: 'par semaine', circled: true },
-  { label: 'Tâches identifiées', value: '7', sub: 'Ce mois-ci' },
-  { label: 'Erreurs évitées', value: '11', sub: 'Ce mois-ci' },
+  { label: 'Cas priorisé', value: '1', sub: 'à traiter en atelier', circled: true },
+  { label: 'Solution testée', value: '1', sub: 'assistant ou workflow' },
+  { label: 'Plan d’action', value: '1', sub: 'pour la suite' },
 ]
 
 export function ResultsSection() {
@@ -38,9 +38,9 @@ export function ResultsSection() {
       <Reveal>
         <div className="grid grid-cols-1 items-start gap-9 lg:grid-cols-[0.43fr_0.57fr] lg:gap-12">
           <div className="pt-0 text-center lg:pt-4 lg:text-left">
-            <Badge className="px-5 py-2.5 text-[13px] sm:text-[15px]">Des bénéfices concrets</Badge>
+            <Badge className="px-5 py-2.5 text-[13px] sm:text-[15px]">Sortie d’atelier</Badge>
             <h2 className="mx-auto mt-6 max-w-[620px] text-[30px] font-bold leading-[1.14] tracking-[-0.02em] text-ink sm:text-[38px] lg:mx-0 lg:mt-8">
-              Des résultats visibles dès les premières semaines.
+              Vous repartez avec un premier cas IA testé.
             </h2>
 
             <div className="mt-8 grid grid-cols-1 gap-x-12 gap-y-6 text-left sm:grid-cols-2 lg:mt-12 lg:gap-y-10">

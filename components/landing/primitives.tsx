@@ -25,26 +25,35 @@ export function Section({
 
 type BrandButtonProps = {
   variant?: 'primary' | 'ghost'
+  href?: string
 } & React.ButtonHTMLAttributes<HTMLButtonElement>
 
 export function BrandButton({
   variant = 'primary',
+  href,
   className,
   children,
   ...props
 }: BrandButtonProps) {
+  const buttonClassName = cn(
+    'group inline-flex cursor-pointer items-center justify-center gap-2.5 rounded-[14px] px-6 py-4 text-[15px] font-semibold leading-none transition-all duration-200 outline-none focus-visible:ring-4 focus-visible:ring-brand/20',
+    variant === 'primary' &&
+      'bg-brand text-brand-foreground shadow-[0_10px_22px_-16px_rgba(14,21,48,0.55)] hover:bg-[#0f47bd] active:translate-y-px',
+    variant === 'ghost' &&
+      'bg-white text-ink shadow-none ring-1 ring-black/10 hover:bg-brand-50',
+    className,
+  )
+
+  if (href) {
+    return (
+      <a href={href} className={buttonClassName}>
+        {children}
+      </a>
+    )
+  }
+
   return (
-    <button
-      className={cn(
-        'group inline-flex items-center justify-center gap-2.5 rounded-[14px] px-6 py-4 text-[15px] font-semibold leading-none transition-all duration-200 outline-none focus-visible:ring-4 focus-visible:ring-brand/20',
-        variant === 'primary' &&
-          'bg-brand text-brand-foreground shadow-[0_10px_22px_-16px_rgba(14,21,48,0.55)] hover:bg-[#0f47bd] active:translate-y-px',
-        variant === 'ghost' &&
-          'bg-white text-ink shadow-none ring-1 ring-black/10 hover:bg-brand-50',
-        className,
-      )}
-      {...props}
-    >
+    <button className={buttonClassName} {...props}>
       {children}
     </button>
   )

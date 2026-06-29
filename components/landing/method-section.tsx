@@ -1,43 +1,38 @@
-import { CheckCircle2, Search, TrendingUp, Zap } from 'lucide-react'
+import { Bot, CheckCircle2, Search } from 'lucide-react'
 import { Section } from './primitives'
 import { Reveal } from './reveal'
 
 const steps = [
   {
     icon: <Search className="size-8" />,
-    title: 'On analyse',
-    description: 'On identifie avec vous les tâches répétitives et chronophages.',
+    title: 'Analyse du terrain',
+    description: 'Nous partons de vos outils, de vos fichiers et de vos tâches réelles.',
   },
   {
-    icon: <Zap className="size-8" />,
-    title: 'On automatise',
-    description: 'On conçoit des automatisations sur mesure adaptées à vos outils.',
+    icon: <Bot className="size-8" />,
+    title: 'Sélection du cas prioritaire',
+    description: 'Nous ciblons une tâche répétitive qui peut être simplifiée rapidement.',
   },
   {
     icon: <CheckCircle2 className="size-8" />,
-    title: 'On teste',
-    description: 'On teste ensemble pour valider les résultats rapidement.',
-  },
-  {
-    icon: <TrendingUp className="size-8" />,
-    title: 'Vous gagnez',
-    description: "Moins d'erreurs, plus de temps, plus de clarté au quotidien.",
+    title: 'Validation du gain',
+    description: 'Nous validons ce qui peut être récupéré et ce qui mérite une suite.',
   },
 ]
 
 export function MethodSection() {
   return (
-    <Section className="py-10 lg:py-10">
+    <Section id="methode" className="py-10 lg:py-10">
       <Reveal>
         <h2 className="text-center text-[26px] font-bold tracking-[-0.02em] text-ink sm:text-[30px]">
-          Une méthode simple en 4 étapes
+          Une méthode simple et structurée
         </h2>
         <p className="mt-3 text-center text-[14px] font-medium text-ink-soft">
-          On avance ensemble, pas à pas.
+          L’objectif est de traiter l’essentiel, sans complexité inutile.
         </p>
       </Reveal>
 
-      <div className="relative mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-9">
+      <div className="relative mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-9">
         {steps.map((step, i) => (
           <Reveal key={step.title} delay={i * 90}>
             <div className="relative flex min-h-[184px] flex-col items-center rounded-2xl border border-black/[0.04] bg-white px-6 pb-6 pt-10 text-center shadow-[0_16px_42px_-30px_rgba(14,21,48,0.28)] lg:min-h-[218px] lg:pt-11">

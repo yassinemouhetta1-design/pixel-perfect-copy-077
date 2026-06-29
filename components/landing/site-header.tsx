@@ -1,7 +1,12 @@
 import { ArrowRight } from 'lucide-react'
 import { BrandButton } from './primitives'
 
-const navItems = ["L'atelier", 'Pour qui', 'Méthode', 'Contact']
+const navItems = [
+  { label: "L'atelier", href: '#atelier' },
+  { label: 'Pour qui', href: '#pour-qui' },
+  { label: 'Simulateur', href: '#simulateur' },
+  { label: 'Contact', href: '#contact' },
+]
 
 export function SiteHeader() {
   return (
@@ -19,23 +24,25 @@ export function SiteHeader() {
               />
             </svg>
           </span>
-          <span className="text-[13px] font-bold tracking-[-0.02em] text-ink sm:text-[15px]">YX AUTOMATION</span>
+          <span className="text-[13px] font-bold tracking-[-0.02em] text-ink sm:text-[15px]">
+            YX AUTOMATION
+          </span>
         </a>
 
-        <nav className="hidden items-center gap-14 lg:flex">
+        <nav className="hidden items-center gap-10 lg:flex">
           {navItems.map((item) => (
             <a
-              key={item}
-              href="#"
+              key={item.label}
+              href={item.href}
               className="text-[15px] font-semibold text-ink transition-colors hover:text-brand"
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </nav>
 
-        <BrandButton className="hidden rounded-xl px-5 py-3 text-[13px] sm:inline-flex lg:px-7 lg:py-4 lg:text-[15px]">
-          <span>Diagnostic gratuit</span>
+        <BrandButton href="#contact" className="hidden rounded-xl px-5 py-3 text-[13px] sm:inline-flex lg:px-7 lg:py-4 lg:text-[15px]">
+          <span>Appel de cadrage</span>
           <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
         </BrandButton>
       </div>

@@ -81,7 +81,7 @@ export function SavingsSimulator() {
                     Simulateur rapide
                   </p>
                   <h2 className="mt-2 text-[28px] font-bold leading-tight tracking-[-0.03em] text-ink sm:text-[36px]">
-                    Estimez la marge que vos tâches répétitives immobilisent.
+                    Estimez le coût annuel de vos tâches répétitives.
                   </h2>
                 </div>
               </div>
@@ -120,7 +120,7 @@ export function SavingsSimulator() {
             <div className="bg-[#f5f8ff] p-6 sm:p-9 lg:p-12">
               <div className="h-full rounded-[24px] bg-white p-6 shadow-[0_18px_46px_-34px_rgba(14,21,48,0.32)] ring-1 ring-black/[0.04] sm:p-8">
                 <p className="text-[13px] font-bold uppercase tracking-[0.14em] text-[#8b99b8]">
-                  Marge récupérable mensuelle
+                  Coût récupérable potentiel / mois
                 </p>
                 <p className="mt-4 font-mono text-[42px] font-bold leading-none tracking-[-0.05em] text-ink sm:text-[52px]">
                   + {formatNumber(results.monthlyMargin)} €
@@ -130,7 +130,7 @@ export function SavingsSimulator() {
 
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
-                    <p className="text-[14px] font-medium text-[#8b99b8]">Marge / an</p>
+                    <p className="text-[14px] font-medium text-[#8b99b8]">Coût / an</p>
                     <p className="mt-2 font-mono text-[19px] font-bold text-ink">
                       + {formatNumber(results.yearlyMargin)} €
                     </p>
@@ -143,14 +143,13 @@ export function SavingsSimulator() {
                   </div>
                 </div>
 
-                <BrandButton className="mt-8 w-full rounded-xl px-6 py-5 text-[14px] uppercase tracking-[0.02em]">
-                  Réclamer cette marge
+                <BrandButton href="#contact" className="mt-8 w-full rounded-xl px-6 py-5 text-[14px] uppercase tracking-[0.02em]">
+                  Vérifier mon potentiel de gain
                   <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
                 </BrandButton>
 
                 <p className="mt-4 text-center text-[12px] font-medium leading-relaxed text-ink-soft">
-                  Estimation indicative basée sur 4 semaines par mois. Le diagnostic sert à
-                  vérifier ce qui est réellement récupérable.
+                  Estimation indicative. Les hypothèses sont confirmées lors de l’entretien de cadrage.
                 </p>
               </div>
             </div>

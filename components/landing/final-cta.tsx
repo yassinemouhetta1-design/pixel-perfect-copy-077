@@ -1,12 +1,12 @@
-import { ArrowRight, CalendarDays, Check, Quote, ShieldCheck, Star } from 'lucide-react'
+import { ArrowRight, CalendarDays, Check, ShieldCheck } from 'lucide-react'
 import { BrandButton, Section } from './primitives'
 import { Reveal } from './reveal'
 
-const checks = ['Échange sans engagement', 'Réponse sous 24h', '100% adapté à votre activité']
+const checks = ['690 € HT', '2 demi-journées à distance', 'Prototype simple inclus']
 
 export function FinalCta() {
   return (
-    <Section className="pb-10 pt-6 lg:pb-12 lg:pt-2">
+    <Section id="contact" className="pb-10 pt-6 lg:pb-12 lg:pt-2">
       <Reveal>
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-[1.03fr_0.97fr] lg:gap-6">
           <div className="rounded-[24px] bg-brand-soft p-6 sm:rounded-[28px] sm:p-8">
@@ -16,18 +16,17 @@ export function FinalCta() {
               </span>
               <div>
                 <h2 className="max-w-sm text-[23px] font-bold leading-[1.14] tracking-[-0.02em] text-ink sm:text-[25px]">
-                  Prêt à reprendre le contrôle de votre temps ?
+                  Réservez un entretien de cadrage.
                 </h2>
                 <p className="mt-4 max-w-md text-[13px] font-medium leading-[1.85] text-ink-soft">
-                  Réservez un échange gratuit de 20 minutes pour voir comment l'IA peut vous aider
-                  concrètement.
+                  Réservez un entretien gratuit de 20 minutes pour valider l’intérêt de l’atelier et le potentiel de gain.
                 </p>
               </div>
             </div>
 
             <div className="mt-7 grid gap-6 md:grid-cols-[auto_1fr] md:items-end">
-              <BrandButton className="w-full rounded-xl px-6 py-4 text-[14px] sm:w-auto">
-                Réserver un échange
+              <BrandButton href="#contact" className="w-full rounded-xl px-6 py-4 text-[14px] sm:w-auto">
+                Planifier l’entretien
                 <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
               </BrandButton>
 
@@ -45,31 +44,30 @@ export function FinalCta() {
           </div>
 
           <div className="rounded-[24px] bg-[#f5f7fb] p-6 sm:rounded-[28px] sm:p-8">
-            <Quote className="size-10 fill-brand text-brand" />
-            <blockquote className="mt-6 max-w-lg text-[15px] font-semibold leading-[1.75] text-ink">
-              YX Automation nous a permis de gagner un temps précieux sur des tâches qu'on pensait
-              inévitables. L'accompagnement est clair, concret et efficace.
-            </blockquote>
-
-            <div className="mt-8 flex flex-col items-start justify-between gap-5 sm:mt-9 sm:flex-row sm:items-end sm:gap-4">
-              <div className="flex items-center gap-3">
-                <span className="flex size-11 items-center justify-center rounded-full bg-brand-soft text-sm font-bold text-brand">
-                  CL
+            <h3 className="text-[23px] font-bold leading-tight text-ink">Pendant l’appel</h3>
+            <p className="mt-3 text-[14px] font-medium leading-[1.75] text-ink-soft">
+              Nous validons le problème, le potentiel de gain et l’adéquation de l’atelier.
+            </p>
+            <ul className="mt-5 grid gap-3">
+              <li className="flex items-center gap-3 text-[14px] font-semibold text-ink">
+                <span className="flex size-5 items-center justify-center rounded-full bg-white text-brand">
+                  <Check className="size-3.5" />
                 </span>
-                <div>
-                  <p className="text-[13px] font-bold text-ink">Claire L.</p>
-                  <p className="text-[11px] font-medium text-ink-soft">
-                    Responsable administrative - PME
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-1 text-brand">
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <Star key={index} className="size-5 fill-current" />
-                ))}
-              </div>
-            </div>
+                1 problème prioritaire
+              </li>
+              <li className="flex items-center gap-3 text-[14px] font-semibold text-ink">
+                <span className="flex size-5 items-center justify-center rounded-full bg-white text-brand">
+                  <Check className="size-3.5" />
+                </span>
+                1 premier cas testable
+              </li>
+              <li className="flex items-center gap-3 text-[14px] font-semibold text-ink">
+                <span className="flex size-5 items-center justify-center rounded-full bg-white text-brand">
+                  <Check className="size-3.5" />
+                </span>
+                1 estimation de gain
+              </li>
+            </ul>
           </div>
         </div>
       </Reveal>
