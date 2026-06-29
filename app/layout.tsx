@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     url: '/',
     siteName: 'YX Automation',
-    title: 'YX Automation - Moins de copier-coller, plus de temps utile',
+    title: 'YX Automation - Moins de copier-coller, plus de marge',
     description:
       "Un atelier IA à distance pour repérer les tâches répétitives, tester des usages concrets et préparer un plan d'action simple.",
     images: [

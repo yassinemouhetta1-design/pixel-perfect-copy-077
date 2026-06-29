@@ -38,9 +38,9 @@ export function Hero() {
             copier-coller.
             <br />
             <span className="text-brand lg:whitespace-nowrap">
-              Plus de temps{" "}
+              Plus de{" "}
               <span className="relative inline-block">
-                utile.
+                marge.
                 <svg
                   className="absolute -bottom-2.5 left-0 h-2 w-full text-brand"
                   viewBox="0 0 100 10"
