@@ -2,6 +2,7 @@ import { FinalCta } from '@/components/landing/final-cta'
 import { Hero } from '@/components/landing/hero'
 import { MethodSection } from '@/components/landing/method-section'
 import { ResultsSection } from '@/components/landing/results-section'
+import { SavingsSimulator } from '@/components/landing/savings-simulator'
 import { SiteHeader } from '@/components/landing/site-header'
 
 const structuredData = {
@@ -46,6 +47,7 @@ export default function Page() {
       <SiteHeader />
       <Hero />
       <MethodSection />
+      <SavingsSimulator />
       <ResultsSection />
       <FinalCta />
     </main>
