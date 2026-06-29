@@ -91,7 +91,7 @@ export function SavingsSimulator() {
                   label="Heures perdues par semaine"
                   value={hoursPerWeek}
                   min={1}
-                  max={20}
+                  max={10}
                   step={1}
                   unit="h"
                   onChange={setHoursPerWeek}
