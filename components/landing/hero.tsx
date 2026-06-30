@@ -61,8 +61,8 @@ export function Hero() {
           </h1>
 
           <p className="mx-auto mt-7 max-w-[470px] text-[16px] font-medium leading-[1.65] text-ink sm:text-[18px] lg:mx-0 lg:leading-[1.75]">
-            En 2 ateliers, nous identifions un cas d’usage prioritaire et construisons une
-            première solution IA simple, directement reliée à vos outils et à vos tâches.
+            En 2 ateliers, nous vous formons, identifions un cas d’usage prioritaire, puis
+            construisons une première solution IA, directement reliée à vos outils et à vos tâches.
           </p>
 
           <div className="mt-8 flex flex-col items-center gap-4 sm:mt-10 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-8 lg:justify-start">
