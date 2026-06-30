@@ -106,7 +106,7 @@ export function SavingsSimulator() {
                   onChange={setCollaborators}
                 />
                 <SliderRow
-                  label="Taux horaire moyen"
+                  label="Taux horaire chargé"
                   value={hourlyRate}
                   min={20}
                   max={40}
