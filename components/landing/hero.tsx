@@ -30,9 +30,9 @@ export function Hero() {
         className="pointer-events-none absolute right-[-120px] top-[-60px] size-[760px] rounded-full bg-[radial-gradient(circle,rgba(190,210,255,0.42)_0%,rgba(210,225,255,0.18)_55%,transparent_76%)] blur-[2px]"
       />
 
-      <div className="relative z-10 mx-auto grid min-h-0 w-full max-w-[1460px] grid-cols-1 items-start gap-4 px-5 pb-4 pt-5 sm:gap-8 sm:px-8 sm:pt-10 lg:min-h-[620px] lg:grid-cols-[570px_minmax(0,1fr)] lg:px-12 lg:pb-0 lg:pt-0">
-        <div className="relative z-10 min-w-0 pt-8 text-center sm:pt-12 lg:pt-16 lg:text-left">
-          <h1 className="mx-auto max-w-[610px] text-[42px] font-bold leading-[1.03] tracking-[-0.03em] text-ink sm:text-[60px] lg:mx-0 lg:text-[58px]">
+      <div className="relative z-10 mx-auto grid min-h-0 w-full max-w-[1460px] grid-cols-1 items-start gap-4 px-5 pb-4 pt-5 sm:gap-8 sm:px-8 sm:pt-10 lg:min-h-[620px] lg:grid-cols-[640px_minmax(0,1fr)] lg:px-12 lg:pb-0 lg:pt-0 xl:grid-cols-[670px_minmax(0,1fr)]">
+        <div className="relative z-10 min-w-0 pt-8 text-center sm:pt-12 lg:pl-8 lg:pt-16 lg:text-left xl:pl-10">
+          <h1 className="mx-auto max-w-[610px] text-[42px] font-bold leading-[1.03] tracking-[-0.03em] text-ink sm:text-[60px] lg:mx-0 lg:max-w-[650px] lg:text-[58px]">
             Moins de
             <br />
             copier-coller.
@@ -60,7 +60,7 @@ export function Hero() {
             </span>
           </h1>
 
-          <p className="mx-auto mt-7 max-w-[470px] text-[16px] font-medium leading-[1.65] text-ink sm:text-[18px] lg:mx-0 lg:leading-[1.75]">
+          <p className="mx-auto mt-7 max-w-[470px] text-[16px] font-medium leading-[1.65] text-ink sm:text-[18px] lg:mx-0 lg:max-w-[540px] lg:leading-[1.75]">
             En 2 ateliers, nous vous formons, identifions un cas d’usage prioritaire, puis
             construisons une première solution IA, directement reliée à vos outils et à vos tâches.
           </p>
@@ -90,7 +90,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto mt-2 aspect-[1.503] w-[118%] max-w-[560px] -translate-x-[2%] drop-shadow-[0_36px_60px_rgba(18,45,120,0.10)] sm:w-full sm:max-w-[760px] lg:ml-0 lg:-mr-8 lg:mt-[28px] lg:max-w-[880px] lg:translate-x-0 lg:scale-100 lg:origin-center">
+        <div className="relative mx-auto mt-2 aspect-[1.503] w-[112%] max-w-[540px] -translate-x-[1%] drop-shadow-[0_36px_60px_rgba(18,45,120,0.10)] sm:w-full sm:max-w-[720px] lg:ml-0 lg:-mr-4 lg:mt-[34px] lg:max-w-[800px] lg:translate-x-[28px] lg:scale-95 lg:origin-center xl:max-w-[830px] xl:translate-x-[36px]">
           {/* Le piédestal 3D blanc de support des éléments (agrandi à 110% et fondu dans le blanc) */}
           <div 
             className="absolute left-[-5%] w-[110%] aspect-[5.39] z-30 pointer-events-none"
