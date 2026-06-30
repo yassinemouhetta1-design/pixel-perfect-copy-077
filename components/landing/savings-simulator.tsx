@@ -67,7 +67,7 @@ export function SavingsSimulator() {
   }, [collaborators, hourlyRate, hoursPerWeek])
 
   return (
-    <Section id="simulateur" className="py-8 lg:py-10">
+    <Section id="simulateur" className="py-5 lg:py-7">
       <Reveal>
         <div className="overflow-hidden rounded-[28px] bg-white shadow-[0_18px_60px_-42px_rgba(33,72,255,0.32)] ring-1 ring-black/[0.04] sm:rounded-[34px]">
           <div className="grid grid-cols-1 gap-0 lg:grid-cols-[1.05fr_0.95fr]">
@@ -78,10 +78,10 @@ export function SavingsSimulator() {
                 </span>
                 <div>
                   <p className="text-[13px] font-bold uppercase tracking-[0.14em] text-brand">
-                    Simulateur rapide
+                    Simulateur de gain de temps
                   </p>
                   <h2 className="mt-2 text-[28px] font-bold leading-tight tracking-[-0.03em] text-ink sm:text-[36px]">
-                    Estimez le coût annuel de vos tâches répétitives.
+                    Estimez le temps que vos tâches répétitives vous font perdre.
                   </h2>
                 </div>
               </div>
@@ -120,7 +120,7 @@ export function SavingsSimulator() {
             <div className="bg-[#f5f8ff] p-6 sm:p-9 lg:p-12">
               <div className="h-full rounded-[24px] bg-white p-6 shadow-[0_18px_46px_-34px_rgba(14,21,48,0.32)] ring-1 ring-black/[0.04] sm:p-8">
                 <p className="text-[13px] font-bold uppercase tracking-[0.14em] text-[#8b99b8]">
-                  Coût récupérable potentiel / mois
+                  Gain de temps potentiel / mois
                 </p>
                 <p className="mt-4 font-mono text-[42px] font-bold leading-none tracking-[-0.05em] text-ink sm:text-[52px]">
                   + {formatNumber(results.monthlyMargin)} €
@@ -130,7 +130,7 @@ export function SavingsSimulator() {
 
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div>
-                    <p className="text-[14px] font-medium text-[#8b99b8]">Coût / an</p>
+                    <p className="text-[14px] font-medium text-[#8b99b8]">Gain / an</p>
                     <p className="mt-2 font-mono text-[19px] font-bold text-ink">
                       + {formatNumber(results.yearlyMargin)} €
                     </p>
@@ -144,12 +144,12 @@ export function SavingsSimulator() {
                 </div>
 
                 <BrandButton href="#contact" className="mt-8 w-full rounded-xl px-6 py-5 text-[14px] uppercase tracking-[0.02em]">
-                  Vérifier mon potentiel de gain
+                  Voir mon gain de temps
                   <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
                 </BrandButton>
 
                 <p className="mt-4 text-center text-[12px] font-medium leading-relaxed text-ink-soft">
-                  Estimation indicative. Les hypothèses sont confirmées lors de l’entretien de cadrage.
+                  Estimation indicative. Le détail sera revu ensemble pendant l’entretien.
                 </p>
               </div>
             </div>

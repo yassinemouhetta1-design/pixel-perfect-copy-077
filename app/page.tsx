@@ -1,9 +1,10 @@
 import { FinalCta } from '@/components/landing/final-cta'
 import { Hero } from '@/components/landing/hero'
-import { MethodSection } from '@/components/landing/method-section'
 import { ProblemSolutionSection } from '@/components/landing/problem-solution-section'
 import { SavingsSimulator } from '@/components/landing/savings-simulator'
 import { SiteHeader } from '@/components/landing/site-header'
+import { ValueSection } from '@/components/landing/value-section'
+import { TrustedBySection } from '@/components/landing/trusted-by-section'
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -46,9 +47,10 @@ export default function Page() {
       />
       <SiteHeader />
       <Hero />
+      <TrustedBySection />
       <SavingsSimulator />
       <ProblemSolutionSection />
-      <MethodSection />
+      <ValueSection />
       <FinalCta />
     </main>
   )

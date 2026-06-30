@@ -16,14 +16,14 @@ const solutionPoints = [
 
 export function ProblemSolutionSection() {
   return (
-    <Section id="probleme-solution" className="py-9 lg:py-10">
+    <Section id="probleme-solution" className="py-6 lg:py-7">
       <Reveal>
         <div className="text-center">
           <h2 className="mx-auto mt-5 max-w-3xl text-[30px] font-bold leading-[1.12] tracking-[-0.03em] text-ink sm:text-[40px]">
-            L’enjeu n’est pas l’IA. L’enjeu, c’est le temps mobilisé par les tâches répétitives.
+            L’objectif est simple: réduire le temps perdu sur les tâches répétitives.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-[16px] font-medium leading-[1.75] text-ink-soft sm:text-[18px]">
-            Le détail opérationnel est précisé lors de l’entretien. Ici, nous nous concentrons sur
+            L’entretien permet d’entrer dans le détail opérationnel. Ici, nous restons sur l’essentiel:
             le problème, le gain potentiel et la première solution à mettre en place.
           </p>
         </div>
@@ -34,7 +34,7 @@ export function ProblemSolutionSection() {
               <span className="flex size-11 items-center justify-center rounded-full bg-[#fff1f1] text-[#ef4444]">
                 <TriangleAlert className="size-5" />
               </span>
-              <h3 className="text-[22px] font-bold text-ink">Le problème</h3>
+              <h3 className="text-[22px] font-bold text-ink">Les irritants</h3>
             </div>
             <ul className="mt-5 grid gap-3">
               {problems.map((item) => (
@@ -53,7 +53,7 @@ export function ProblemSolutionSection() {
               <span className="flex size-11 items-center justify-center rounded-full bg-brand-soft text-brand">
                 <ArrowRightLeft className="size-5" />
               </span>
-              <h3 className="text-[22px] font-bold text-ink">La solution</h3>
+              <h3 className="text-[22px] font-bold text-ink">Ce que nous faisons</h3>
             </div>
             <ul className="mt-5 grid gap-3">
               {solutionPoints.map((item) => (

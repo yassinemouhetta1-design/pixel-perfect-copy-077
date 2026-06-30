@@ -46,7 +46,7 @@ export function OfferSection() {
                 <p className="text-[13px] font-semibold uppercase tracking-[0.12em] text-ink-soft">
                   Format
                 </p>
-                <p className="mt-2 text-[20px] font-bold text-ink">2 demi-journées</p>
+                <p className="mt-2 text-[20px] font-bold text-ink">2 ateliers</p>
               </div>
               <div className="rounded-2xl bg-white p-4 shadow-[0_12px_28px_-24px_rgba(14,21,48,0.25)]">
                 <p className="text-[13px] font-semibold uppercase tracking-[0.12em] text-ink-soft">
