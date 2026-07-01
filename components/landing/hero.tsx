@@ -66,7 +66,7 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col items-center gap-4 sm:mt-10 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-8 lg:justify-start">
-            <BrandButton href="#contact" className="w-full max-w-[310px] whitespace-nowrap rounded-xl px-7 py-5 text-[15px] sm:w-auto sm:max-w-none sm:px-8 sm:text-[16px]">
+            <BrandButton href="#diagnostic-form" className="w-full max-w-[310px] whitespace-nowrap rounded-xl px-7 py-5 text-[15px] sm:w-auto sm:max-w-none sm:px-8 sm:text-[16px]">
               Réserver un entretien de cadrage
               <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
             </BrandButton>

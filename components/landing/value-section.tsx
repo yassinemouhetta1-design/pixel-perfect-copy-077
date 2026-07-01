@@ -34,7 +34,7 @@ export function ValueSection() {
   return (
     <Section id="valeur" className="py-6 lg:py-8">
       <Reveal>
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-[0.94fr_1.06fr]">
+        <div className="mx-auto grid max-w-[1080px] grid-cols-1 gap-6 lg:grid-cols-[0.94fr_1.06fr]">
           <div>
             <Badge>Ce qui est inclus</Badge>
             <h2 className="mt-5 max-w-xl text-[30px] font-bold leading-[1.12] tracking-[-0.03em] text-ink sm:text-[40px]">
@@ -49,7 +49,7 @@ export function ValueSection() {
               {expectations.map((item) => (
                 <div
                   key={item}
-                  className="flex gap-3 rounded-2xl bg-white p-4 shadow-[0_14px_36px_-30px_rgba(14,21,48,0.22)] ring-1 ring-black/[0.05]"
+                  className="yx-card-motion flex gap-3 rounded-2xl bg-white p-4 shadow-[0_14px_36px_-30px_rgba(14,21,48,0.22)] ring-1 ring-black/[0.05]"
                 >
                   <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-brand-soft text-brand">
                     <CheckCircle2 className="size-3.5" />
@@ -62,7 +62,7 @@ export function ValueSection() {
 
           <div className="grid gap-4 sm:grid-cols-2">
             {deliverables.map((item) => (
-              <Card key={item.title} className="h-full p-5">
+              <Card key={item.title} className="yx-card-motion h-full p-5">
                 <div className="flex size-11 items-center justify-center rounded-full bg-brand-soft text-brand">
                   {item.icon}
                 </div>

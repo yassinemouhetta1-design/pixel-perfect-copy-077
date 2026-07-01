@@ -8,7 +8,7 @@ export function FinalCta() {
   return (
     <Section id="contact" className="pb-8 pt-3 lg:pb-10 lg:pt-0">
       <Reveal>
-        <div className="rounded-2xl bg-brand-soft px-5 py-6 sm:px-7 lg:flex lg:items-center lg:justify-between lg:gap-8 lg:px-8">
+        <div className="mx-auto max-w-[1060px] rounded-2xl bg-brand-soft px-5 py-6 sm:px-7 lg:flex lg:items-center lg:justify-between lg:gap-8 lg:px-8">
           <div className="flex gap-4">
             <span className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-white text-brand shadow-sm">
               <CalendarDays className="size-6" />
@@ -24,7 +24,7 @@ export function FinalCta() {
           </div>
 
           <div className="mt-6 shrink-0 lg:mt-0">
-            <BrandButton href="#contact" className="w-full rounded-xl px-6 py-4 text-[14px] sm:w-auto">
+            <BrandButton href="#diagnostic-form" className="w-full rounded-xl px-6 py-4 text-[14px] sm:w-auto">
               Planifier l’entretien
               <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
             </BrandButton>

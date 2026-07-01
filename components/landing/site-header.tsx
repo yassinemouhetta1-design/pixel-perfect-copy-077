@@ -5,7 +5,7 @@ const navItems = [
   { label: "L'atelier", href: '#atelier' },
   { label: 'Pour qui', href: '#pour-qui' },
   { label: 'Simulateur', href: '#simulateur' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Contact', href: '#diagnostic-form' },
 ]
 
 export function SiteHeader() {
@@ -41,7 +41,7 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <BrandButton href="#contact" className="hidden rounded-xl px-5 py-3 text-[13px] sm:inline-flex lg:px-7 lg:py-4 lg:text-[15px]">
+        <BrandButton href="#diagnostic-form" className="hidden rounded-xl px-5 py-3 text-[13px] sm:inline-flex lg:px-7 lg:py-4 lg:text-[15px]">
           <span>Appel de cadrage</span>
           <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
         </BrandButton>

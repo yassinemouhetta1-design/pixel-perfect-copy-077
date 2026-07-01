@@ -69,7 +69,7 @@ export function SavingsSimulator() {
   return (
     <Section id="simulateur" className="py-5 lg:py-7">
       <Reveal>
-        <div className="overflow-hidden rounded-[28px] bg-white shadow-[0_18px_60px_-42px_rgba(33,72,255,0.32)] ring-1 ring-black/[0.04] sm:rounded-[34px]">
+        <div className="yx-card-motion mx-auto max-w-[1120px] overflow-hidden rounded-[28px] bg-white shadow-[0_18px_60px_-42px_rgba(33,72,255,0.32)] ring-1 ring-black/[0.04] sm:rounded-[34px]">
           <div className="grid grid-cols-1 gap-0 lg:grid-cols-[1.05fr_0.95fr]">
             <div className="p-6 sm:p-9 lg:p-12">
               <div className="mb-8 flex items-start gap-4">
@@ -118,7 +118,7 @@ export function SavingsSimulator() {
             </div>
 
             <div className="bg-[#f5f8ff] p-6 sm:p-9 lg:p-12">
-              <div className="h-full rounded-[24px] bg-white p-6 shadow-[0_18px_46px_-34px_rgba(14,21,48,0.32)] ring-1 ring-black/[0.04] sm:p-8">
+              <div className="yx-shine h-full rounded-[24px] bg-white p-6 shadow-[0_18px_46px_-34px_rgba(14,21,48,0.32)] ring-1 ring-black/[0.04] sm:p-8">
                 <p className="text-[13px] font-bold uppercase tracking-[0.14em] text-[#8b99b8]">
                   Gain de temps potentiel / mois
                 </p>
@@ -143,7 +143,7 @@ export function SavingsSimulator() {
                   </div>
                 </div>
 
-                <BrandButton href="#contact" className="mt-8 w-full rounded-xl px-6 py-5 text-[14px] uppercase tracking-[0.02em]">
+                <BrandButton href="#diagnostic-form" className="mt-8 w-full rounded-xl px-6 py-5 text-[14px] uppercase tracking-[0.02em]">
                   Voir mon gain de temps
                   <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
                 </BrandButton>

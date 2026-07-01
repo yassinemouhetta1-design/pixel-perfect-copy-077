@@ -1,5 +1,6 @@
 import { FinalCta } from '@/components/landing/final-cta'
 import { Hero } from '@/components/landing/hero'
+import { LeadFormSection } from '@/components/landing/lead-form-section'
 import { ProblemSolutionSection } from '@/components/landing/problem-solution-section'
 import { SavingsSimulator } from '@/components/landing/savings-simulator'
 import { SiteHeader } from '@/components/landing/site-header'
@@ -51,6 +52,7 @@ export default function Page() {
       <SavingsSimulator />
       <ProblemSolutionSection />
       <ValueSection />
+      <LeadFormSection />
       <FinalCta />
     </main>
   )

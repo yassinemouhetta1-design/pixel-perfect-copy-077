@@ -28,8 +28,8 @@ export function ProblemSolutionSection() {
           </p>
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-5 lg:grid-cols-2">
-          <Card className="p-6 sm:p-8">
+        <div className="mx-auto mt-8 grid max-w-[1060px] grid-cols-1 gap-5 lg:grid-cols-2">
+          <Card className="yx-card-motion p-6 sm:p-8">
             <div className="flex items-center gap-3">
               <span className="flex size-11 items-center justify-center rounded-full bg-[#fff1f1] text-[#ef4444]">
                 <TriangleAlert className="size-5" />
@@ -48,7 +48,7 @@ export function ProblemSolutionSection() {
             </ul>
           </Card>
 
-          <Card className="p-6 sm:p-8">
+          <Card className="yx-card-motion p-6 sm:p-8">
             <div className="flex items-center gap-3">
               <span className="flex size-11 items-center justify-center rounded-full bg-brand-soft text-brand">
                 <ArrowRightLeft className="size-5" />
